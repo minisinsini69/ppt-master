@@ -1,85 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Malgun Gothic, Segoe UI, sans-serif" data-pptx-page-role="toc">
   <defs>
-    <linearGradient id="porcelain" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#E9DFCF"/>
-      <stop offset="0.45" stop-color="#FFFDF8"/>
-      <stop offset="1" stop-color="#DCCFB9"/>
-    </linearGradient>
-    <radialGradient id="lacquer" cx="0.45" cy="0.4" r="0.6">
-      <stop offset="0" stop-color="#3A2A22"/>
-      <stop offset="1" stop-color="#1F1A17"/>
-    </radialGradient>
+    <clipPath id="tocFrame"><rect x="840" y="210" width="300" height="400" rx="16"/></clipPath>
   </defs>
+  <image id="bg" data-pptx-role="background" href="../images/bg_content.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="xMidYMid slice"/>
 
-  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FBF6EC"/>
-  <rect id="top-band" data-pptx-role="decoration" x="0" y="0" width="1280" height="10" fill="#8E1B24"/>
-
-  <g id="header" data-pptx-bounds="64 60 700 156">
-    <text x="96" y="98" font-family="Batang, Georgia, serif" font-size="22" letter-spacing="4" fill="#C79A3B">СОДЕРЖАНИЕ</text>
-    <text x="96" y="166" font-family="Batang, Georgia, serif" font-size="56" font-weight="bold" fill="#8E1B24">목차</text>
-    <line x1="96" y1="198" x2="166" y2="198" stroke="#C79A3B" stroke-width="2"/>
-    <circle cx="180" cy="198" r="5" fill="#C79A3B"/>
+  <g id="header" data-pptx-bounds="210 80 600 120">
+    <text x="220" y="160" font-family="Batang, Georgia, serif" font-size="56" font-weight="bold" fill="#8E1B24">목차</text>
+    <line x1="222" y1="190" x2="292" y2="190" stroke="#C79A3B" stroke-width="2"/>
+    <circle cx="306" cy="190" r="5" fill="#C79A3B"/>
   </g>
 
-  <g id="agenda" data-pptx-bounds="96 228 680 412">
-    <line x1="128" y1="262" x2="128" y2="614" stroke="#C79A3B" stroke-width="3"/>
-    <g id="agenda-1">
-      <circle cx="128" cy="262" r="28" fill="#8E1B24" stroke="#E8C873" stroke-width="3"/>
-      <text x="128" y="270" font-size="24" font-weight="bold" fill="#FBF6EC" text-anchor="middle">01</text>
-      <text x="184" y="273" font-size="32" fill="#2B2220">러시아 차 문화의 역사</text>
+  <g id="agenda" data-pptx-bounds="210 218 600 420">
+    <line x1="252" y1="256" x2="252" y2="592" stroke="#C79A3B" stroke-width="2"/>
+    <g font-family="Batang, Times New Roman, serif" font-size="24" font-weight="bold" fill="#FFFDF8" text-anchor="middle">
+      <circle cx="252" cy="256" r="26" fill="#8E1B24" stroke="#E8C873" stroke-width="2"/><text x="252" y="264">01</text>
+      <circle cx="252" cy="340" r="26" fill="#8E1B24" stroke="#E8C873" stroke-width="2"/><text x="252" y="348">02</text>
+      <circle cx="252" cy="424" r="26" fill="#8E1B24" stroke="#E8C873" stroke-width="2"/><text x="252" y="432">03</text>
+      <circle cx="252" cy="508" r="26" fill="#8E1B24" stroke="#E8C873" stroke-width="2"/><text x="252" y="516">04</text>
+      <circle cx="252" cy="592" r="26" fill="#8E1B24" stroke="#E8C873" stroke-width="2"/><text x="252" y="600">05</text>
     </g>
-    <g id="agenda-2">
-      <circle cx="128" cy="350" r="28" fill="#8E1B24" stroke="#E8C873" stroke-width="3"/>
-      <text x="128" y="358" font-size="24" font-weight="bold" fill="#FBF6EC" text-anchor="middle">02</text>
-      <text x="184" y="361" font-size="32" fill="#2B2220">어떤 차를 마실까?</text>
-    </g>
-    <g id="agenda-3">
-      <circle cx="128" cy="438" r="28" fill="#8E1B24" stroke="#E8C873" stroke-width="3"/>
-      <text x="128" y="446" font-size="24" font-weight="bold" fill="#FBF6EC" text-anchor="middle">03</text>
-      <text x="184" y="449" font-size="32" fill="#2B2220">사모바르와 전통</text>
-    </g>
-    <g id="agenda-4">
-      <circle cx="128" cy="526" r="28" fill="#8E1B24" stroke="#E8C873" stroke-width="3"/>
-      <text x="128" y="534" font-size="24" font-weight="bold" fill="#FBF6EC" text-anchor="middle">04</text>
-      <text x="184" y="537" font-size="32" fill="#2B2220">차를 통한 소통과 환대</text>
-    </g>
-    <g id="agenda-5">
-      <circle cx="128" cy="614" r="28" fill="#8E1B24" stroke="#E8C873" stroke-width="3"/>
-      <text x="128" y="622" font-size="24" font-weight="bold" fill="#FBF6EC" text-anchor="middle">05</text>
-      <text x="184" y="625" font-size="32" fill="#2B2220">구소련 국가들의 차 문화</text>
+    <g font-size="32" fill="#2B2220">
+      <text x="300" y="267">러시아 차 문화의 역사</text>
+      <text x="300" y="351">어떤 차를 마실까?</text>
+      <text x="300" y="435">사모바르와 전통</text>
+      <text x="300" y="519">차를 통한 소통과 환대</text>
+      <text x="300" y="603">구소련 국가들의 차 문화</text>
     </g>
   </g>
 
-  <g id="folk-plate" data-pptx-bounds="800 120 420 520">
-    <circle cx="1010" cy="350" r="190" fill="url(#lacquer)" stroke="#C79A3B" stroke-width="6"/>
-    <circle cx="1010" cy="350" r="172" fill="none" stroke="#C79A3B" stroke-width="1.5"/>
-    <path d="M880 430 C920 340 980 290 1060 270 C1100 260 1130 236 1140 200" fill="none" stroke="#C79A3B" stroke-width="4" stroke-linecap="round"/>
-    <path d="M940 330 C960 300 1000 250 990 205" fill="none" stroke="#C79A3B" stroke-width="3" stroke-linecap="round"/>
-    <g fill="#C79A3B">
-      <path transform="translate(900 392) rotate(-60)" d="M0 0 C10 -12 30 -12 40 0 C30 12 10 12 0 0 Z"/>
-      <path transform="translate(948 330) rotate(-120)" d="M0 0 C10 -12 30 -12 40 0 C30 12 10 12 0 0 Z"/>
-      <path transform="translate(1020 290) rotate(-10)" d="M0 0 C10 -12 30 -12 40 0 C30 12 10 12 0 0 Z"/>
-      <path transform="translate(1090 258) rotate(-70)" d="M0 0 C10 -12 30 -12 40 0 C30 12 10 12 0 0 Z"/>
-      <path transform="translate(990 230) rotate(-100)" d="M0 0 C10 -12 30 -12 40 0 C30 12 10 12 0 0 Z"/>
-    </g>
-    <g fill="#B3202C">
-      <circle cx="1060" cy="250" r="13"/><circle cx="1082" cy="236" r="11"/><circle cx="1066" cy="224" r="10"/>
-      <circle cx="970" cy="270" r="12"/><circle cx="952" cy="256" r="10"/>
-      <circle cx="1140" cy="200" r="12"/>
-    </g>
-    <g fill="#F3E7D3" fill-opacity="0.8">
-      <circle cx="1056" cy="246" r="3"/><circle cx="966" cy="266" r="3"/><circle cx="1136" cy="196" r="3"/>
-    </g>
-    <g transform="translate(860 480)">
-      <ellipse cx="150" cy="128" rx="150" ry="24" fill="#FFFDF8" stroke="#D8C8AE" stroke-width="2"/>
-      <ellipse cx="150" cy="128" rx="122" ry="15" fill="none" stroke="#8E1B24" stroke-width="3"/>
-      <path d="M250 34 C296 30 296 88 236 84" fill="none" stroke="#C79A3B" stroke-width="9"/>
-      <path d="M46 18 L254 18 C250 86 210 116 150 116 C90 116 50 86 46 18 Z" fill="url(#porcelain)" stroke="#D8C8AE" stroke-width="2"/>
-      <ellipse cx="150" cy="22" rx="102" ry="13" fill="#7A2E0E"/>
-      <path d="M58 52 C118 66 182 66 242 52" fill="none" stroke="#8E1B24" stroke-width="7"/>
-      <g fill="#C79A3B"><circle cx="100" cy="80" r="5"/><circle cx="150" cy="86" r="5"/><circle cx="200" cy="80" r="5"/></g>
-    </g>
+  <g id="toc-picture" data-pptx-bounds="830 200 320 420">
+    <image href="../images/toc_teapot.png" x="840" y="210" width="300" height="400" preserveAspectRatio="xMidYMid slice" clip-path="url(#tocFrame)"/>
+    <rect x="840" y="210" width="300" height="400" rx="16" fill="none" stroke="#C79A3B" stroke-width="2"/>
   </g>
-
-  <text id="page-number" data-pptx-role="page-number" x="640" y="694" font-size="18" fill="#6E5E54" text-anchor="middle">02</text>
 </svg>

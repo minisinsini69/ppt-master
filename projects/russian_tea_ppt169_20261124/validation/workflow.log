@@ -196,3 +196,167 @@ stdout:
     [PPTX] /home/user/ppt-master/projects/russian_tea_ppt169_20261124/exports/russian_tea_20261124_020616_native_charts_tables.pptx
     [REPORT] /home/user/ppt-master/projects/russian_tea_ppt169_20261124/validation/russian_tea_20261124_020616_native_charts_tables.report.json
 === 2026-11-24T02:06:16.511Z END run=39601a9e0dcb elapsed_ms=1219 output_lines=46 retained=6 omitted=40 ===
+
+=== 2026-11-24T02:59:52.732Z PYTHON run=4166d39f386e ===
+cwd: /home/user/ppt-master/skills/ppt-master
+argv: ["/usr/local/bin/python3", "scripts/image_gen.py", "--manifest", "/home/user/ppt-master/projects/russian_tea_ppt169_20261124/images/image_prompts.json", "--concurrency", "3"]
+=== 2026-11-24T02:59:52.971Z END run=4166d39f386e elapsed_ms=239 output_lines=3 retained=0 omitted=3 ===
+
+=== 2026-11-24T03:00:01.061Z PYTHON run=9a08c9fe2bb8 ===
+cwd: /home/user/ppt-master/skills/ppt-master
+argv: ["/usr/local/bin/python3", "scripts/image_gen.py", "--manifest", "/home/user/ppt-master/projects/russian_tea_ppt169_20261124/images/image_prompts.json", "--concurrency", "3"]
+stderr:
+  Warning: /home/user/ppt-master/projects/russian_tea_ppt169_20261124/images/image_prompts.json: legacy manifest compatibility: 10 item(s) missing page_role (resolved as local)
+stdout:
+    [OK] Chunk #1 received (2.7MB, 13.6s)
+=== 2026-11-24T03:00:53.748Z END run=9a08c9fe2bb8 elapsed_ms=52686 output_lines=99 retained=2 omitted=97 ===
+
+=== 2026-11-24T03:01:10.602Z PYTHON run=9a401b4476fa ===
+cwd: /home/user/ppt-master/skills/ppt-master
+argv: ["/usr/local/bin/python3", "scripts/analyze_images.py", "/home/user/ppt-master/projects/russian_tea_ppt169_20261124/images"]
+stdout:
+  [REPORT] Image analysis CSV: /home/user/ppt-master/projects/russian_tea_ppt169_20261124/analysis/image_analysis.csv
+=== 2026-11-24T03:01:11.839Z END run=9a401b4476fa elapsed_ms=1237 output_lines=34 retained=1 omitted=33 ===
+
+=== 2026-11-24T03:01:52.264Z PYTHON run=7701524e62b1 ===
+cwd: /home/user/ppt-master/skills/ppt-master
+argv: ["/usr/local/bin/python3", "/home/user/ppt-master/skills/ppt-master/scripts/project_manager.py", "validate", "/home/user/ppt-master/projects/russian_tea_ppt169_20261124"]
+stdout:
+  [OK] Project structure is complete.
+=== 2026-11-24T03:01:52.875Z END run=7701524e62b1 elapsed_ms=611 output_lines=3 retained=1 omitted=2 ===
+
+=== 2026-11-24T03:04:34.836Z PYTHON run=ef3f6cb6d242 ===
+cwd: /home/user/ppt-master/skills/ppt-master
+argv: ["/usr/local/bin/python3", "/home/user/ppt-master/skills/ppt-master/scripts/stamp_native_fallbacks.py", "/home/user/ppt-master/projects/russian_tea_ppt169_20261124/svg_output/04_tea.svg", "--write"]
+=== 2026-11-24T03:04:34.841Z END run=ef3f6cb6d242 elapsed_ms=5 output_lines=2 retained=0 omitted=2 ===
+
+=== 2026-11-24T03:04:47.947Z PYTHON run=540d85bafc27 ===
+cwd: /home/user/ppt-master/skills/ppt-master
+argv: ["/usr/local/bin/python3", "scripts/svg_quality_checker.py", "/home/user/ppt-master/projects/russian_tea_ppt169_20261124", "--canonical-authoring", "--stage", "early", "--json"]
+stdout:
+  [ERROR] 01_cover.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=210, y=196; text='ЧАЙНАЯ КУЛЬТУРА РОСС…') exceeds <g id="cover-title"> data-pptx-bounds on the horizontal axis: content (210.0, 177.3)-(671.3, 203.7), container (196.0, 150.0)-(636.0, 620.0), overflow horizontal 8.0%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈23.1 px per mixed char at 22px incl. headroom; ≈19 chars fit in 440 px
+     [WARN] <text> (x=206, y=320; text='러시아의차 문화') exceeds <g id="cover-title"> data-pptx-bounds on the horizontal axis: content (206.0, 231.6)-(647.0, 478.4), container (196.0, 150.0)-(636.0, 620.0), overflow horizontal 2.5%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈110.2 px per CJK char at 104px incl. headroom; ≈3 chars fit in 440 px
+  [WARN] 02_contents.svg - Passed (with warnings)
+     viewBox: 0 0 1280 720
+     [WARN] Image ../images/toc_teapot.png is 1792x2400 and renders at 0.17x scale in a 300x400 slice frame; the source is 4.5 MiB — file-size advisory only, not an aspect-ratio warning; consider a smaller source asset, or export with svg_to_pptx.py --image-sizing display to downsize at export time
+  [WARN] 03_history.svg - Passed (with warnings)
+     [WARN] Image ../images/p03_caravan.png is 2400x1792 and renders at 0.20x scale in a 480x360 slice frame; the source is 6.3 MiB — file-size advisory only, not an aspect-ratio warning; consider a smaller source asset, or export with svg_to_pptx.py --image-sizing display to downsize at export time
+  [WARN] 04_tea.svg - Passed (with warnings)
+     [WARN] Image ../images/p04_tea_table.png is 2400x1792 and renders at 0.19x scale in a 450x338 slice frame; the source is 4.6 MiB — file-size advisory only, not an aspect-ratio warning; consider a smaller source asset, or export with svg_to_pptx.py --image-sizing display to downsize at export time
+  [OK] 07_ussr.svg - Passed
+  [SUMMARY] Check Summary
+  Total files: 9
+    [OK] Fully passed: 3 (33%)
+    [WARN] With warnings: 5 (55%)
+    [ERROR] With errors: 1 (11%)
+  Provenance categories:
+    blocking: 1          hard findings; gate also requires exit 0
+    introduced: 7        advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 9 | text: 56 | images: 16 | icons: 0
+    Geometry: SVG elements 56 | native presets 2 | page-frame elements 0 | marker uses 0
+  [REPORT] JSON quality report exported: /home/user/ppt-master/projects/russian_tea_ppt169_20261124/validation/svg_quality_early_report.json
+=== 2026-11-24T03:04:51.150Z END run=540d85bafc27 elapsed_ms=3202 output_lines=62 retained=26 omitted=36 ===
+
+=== 2026-11-24T03:04:51.315Z PYTHON run=255d5f4497d3 ===
+cwd: /home/user/ppt-master/skills/ppt-master
+argv: ["/usr/local/bin/python3", "scripts/svg_quality_checker.py", "/home/user/ppt-master/projects/russian_tea_ppt169_20261124", "--canonical-authoring", "--stage", "final", "--json"]
+stdout:
+  [ERROR] 01_cover.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=210, y=196; text='ЧАЙНАЯ КУЛЬТУРА РОСС…') exceeds <g id="cover-title"> data-pptx-bounds on the horizontal axis: content (210.0, 177.3)-(671.3, 203.7), container (196.0, 150.0)-(636.0, 620.0), overflow horizontal 8.0%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈23.1 px per mixed char at 22px incl. headroom; ≈19 chars fit in 440 px
+     [WARN] <text> (x=206, y=320; text='러시아의차 문화') exceeds <g id="cover-title"> data-pptx-bounds on the horizontal axis: content (206.0, 231.6)-(647.0, 478.4), container (196.0, 150.0)-(636.0, 620.0), overflow horizontal 2.5%, vertical 0.0% (error above 5%); expand the root module bounds into available non-overlapping space; otherwise reflow the text; ≈110.2 px per CJK char at 104px incl. headroom; ≈3 chars fit in 440 px
+  [WARN] 02_contents.svg - Passed (with warnings)
+     viewBox: 0 0 1280 720
+     [WARN] Image ../images/toc_teapot.png is 1792x2400 and renders at 0.17x scale in a 300x400 slice frame; the source is 4.5 MiB — file-size advisory only, not an aspect-ratio warning; consider a smaller source asset, or export with svg_to_pptx.py --image-sizing display to downsize at export time
+  [WARN] 03_history.svg - Passed (with warnings)
+     [WARN] Image ../images/p03_caravan.png is 2400x1792 and renders at 0.20x scale in a 480x360 slice frame; the source is 6.3 MiB — file-size advisory only, not an aspect-ratio warning; consider a smaller source asset, or export with svg_to_pptx.py --image-sizing display to downsize at export time
+  [WARN] 04_tea.svg - Passed (with warnings)
+     [WARN] Image ../images/p04_tea_table.png is 2400x1792 and renders at 0.19x scale in a 450x338 slice frame; the source is 4.6 MiB — file-size advisory only, not an aspect-ratio warning; consider a smaller source asset, or export with svg_to_pptx.py --image-sizing display to downsize at export time
+  [OK] 07_ussr.svg - Passed
+  [SUMMARY] Check Summary
+  Total files: 9
+    [OK] Fully passed: 3 (33%)
+    [WARN] With warnings: 5 (55%)
+    [ERROR] With errors: 1 (11%)
+  Provenance categories:
+    blocking: 1          hard findings; gate also requires exit 0
+    introduced: 7        advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 9 | text: 56 | images: 16 | icons: 0
+    Geometry: SVG elements 56 | native presets 2 | page-frame elements 0 | marker uses 0
+  [REPORT] JSON quality report exported: /home/user/ppt-master/projects/russian_tea_ppt169_20261124/validation/svg_quality_report.json
+=== 2026-11-24T03:04:54.189Z END run=255d5f4497d3 elapsed_ms=2874 output_lines=62 retained=26 omitted=36 ===
+
+=== 2026-11-24T03:05:02.089Z PYTHON run=4f1ebd6bc0b9 ===
+cwd: /home/user/ppt-master/skills/ppt-master
+argv: ["/usr/local/bin/python3", "scripts/svg_quality_checker.py", "/home/user/ppt-master/projects/russian_tea_ppt169_20261124", "--canonical-authoring", "--stage", "final", "--json"]
+stdout:
+  [OK] 01_cover.svg - Passed
+  [WARN] 02_contents.svg - Passed (with warnings)
+     [WARN] Image ../images/toc_teapot.png is 1792x2400 and renders at 0.17x scale in a 300x400 slice frame; the source is 4.5 MiB — file-size advisory only, not an aspect-ratio warning; consider a smaller source asset, or export with svg_to_pptx.py --image-sizing display to downsize at export time
+  [WARN] 03_history.svg - Passed (with warnings)
+     [WARN] Image ../images/p03_caravan.png is 2400x1792 and renders at 0.20x scale in a 480x360 slice frame; the source is 6.3 MiB — file-size advisory only, not an aspect-ratio warning; consider a smaller source asset, or export with svg_to_pptx.py --image-sizing display to downsize at export time
+  [SUMMARY] Check Summary
+  Total files: 9
+    [OK] Fully passed: 4 (44%)
+    [WARN] With warnings: 5 (55%)
+    [ERROR] With errors: 0 (0%)
+  Provenance categories:
+    blocking: 0          hard findings; gate also requires exit 0
+    introduced: 6        advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 9 | text: 56 | images: 16 | icons: 0
+    Geometry: SVG elements 56 | native presets 2 | page-frame elements 0 | marker uses 0
+  [REPORT] JSON quality report exported: /home/user/ppt-master/projects/russian_tea_ppt169_20261124/validation/svg_quality_report.json
+=== 2026-11-24T03:05:05.067Z END run=4f1ebd6bc0b9 elapsed_ms=2977 output_lines=58 retained=19 omitted=39 ===
+
+=== 2026-11-24T03:05:10.622Z PYTHON run=467b7410670a ===
+cwd: /home/user/ppt-master/skills/ppt-master
+argv: ["/usr/local/bin/python3", "scripts/total_md_split.py", "/home/user/ppt-master/projects/russian_tea_ppt169_20261124"]
+stdout:
+  [OK] SVG files and notes have one-to-one correspondence
+  [Done] Successfully generated 9/9 file(s)
+  [Done] Notes splitting complete
+=== 2026-11-24T03:05:10.627Z END run=467b7410670a elapsed_ms=5 output_lines=18 retained=3 omitted=15 ===
+
+=== 2026-11-24T03:05:10.753Z PYTHON run=e441b01f0a6b ===
+cwd: /home/user/ppt-master/skills/ppt-master
+argv: ["/usr/local/bin/python3", "scripts/finalize_svg.py", "/home/user/ppt-master/projects/russian_tea_ppt169_20261124"]
+stdout:
+  [OK] Done!
+=== 2026-11-24T03:06:31.010Z END run=e441b01f0a6b elapsed_ms=80256 output_lines=12 retained=1 omitted=11 ===
+
+=== 2026-11-24T03:06:34.080Z PYTHON run=43342c7858cf ===
+cwd: /home/user/ppt-master/skills/ppt-master
+argv: ["/usr/local/bin/python3", "scripts/svg_to_pptx.py", "/home/user/ppt-master/projects/russian_tea_ppt169_20261124", "--native-charts-and-tables", "--image-sizing", "display"]
+stderr:
+  Warning: --native-charts-and-tables replaces shape-based SVG fallbacks with PowerPoint Chart/Table objects. The native objects may normalize styling or omit SVG details that are not represented by marker metadata; use the default shape-based export when exact fallback artwork is required.
+stdout:
+  [Done] Saved: /home/user/ppt-master/projects/russian_tea_ppt169_20261124/exports/russian_tea_20261124_030634_native_charts_tables.pptx
+    [POSTFLIGHT] status=passed-with-warnings quality_gate=passed slides=9 warning_categories=1
+    [POSTFLIGHT][WARNING] quality_introduced_warnings=6
+    [PPTX] /home/user/ppt-master/projects/russian_tea_ppt169_20261124/exports/russian_tea_20261124_030634_native_charts_tables.pptx
+    [REPORT] /home/user/ppt-master/projects/russian_tea_ppt169_20261124/validation/russian_tea_20261124_030634_native_charts_tables.report.json
+=== 2026-11-24T03:07:20.788Z END run=43342c7858cf elapsed_ms=46707 output_lines=43 retained=6 omitted=37 ===
+
+=== 2026-11-24T03:07:32.164Z PYTHON run=2a4f16bcc22d ===
+cwd: /home/user/ppt-master/skills/ppt-master
+argv: ["/usr/local/bin/python3", "scripts/svg_to_pptx.py", "/home/user/ppt-master/projects/russian_tea_ppt169_20261124", "--native-charts-and-tables", "--image-sizing", "display", "--image-max-dimension", "1600"]
+stderr:
+  Warning: --native-charts-and-tables replaces shape-based SVG fallbacks with PowerPoint Chart/Table objects. The native objects may normalize styling or omit SVG details that are not represented by marker metadata; use the default shape-based export when exact fallback artwork is required.
+stdout:
+  [Done] Saved: /home/user/ppt-master/projects/russian_tea_ppt169_20261124/exports/russian_tea_20261124_030732_native_charts_tables.pptx
+    [POSTFLIGHT] status=passed-with-warnings quality_gate=passed slides=9 warning_categories=1
+    [POSTFLIGHT][WARNING] quality_introduced_warnings=6
+    [PPTX] /home/user/ppt-master/projects/russian_tea_ppt169_20261124/exports/russian_tea_20261124_030732_native_charts_tables.pptx
+    [REPORT] /home/user/ppt-master/projects/russian_tea_ppt169_20261124/validation/russian_tea_20261124_030732_native_charts_tables.report.json
+=== 2026-11-24T03:07:59.558Z END run=2a4f16bcc22d elapsed_ms=27393 output_lines=43 retained=6 omitted=37 ===

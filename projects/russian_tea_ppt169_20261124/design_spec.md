@@ -7,7 +7,7 @@
 | --- | --- |
 | Project Name | russian_tea_ppt169_20261124 (러시아의 차 문화 / Чайная культура России) |
 | Canvas Format | PPT 16:9 (1280×720) |
-| Page Count | 8 |
+| Page Count | 9 |
 | Primary Language | ko |
 | Target Audience | Professor and classmates in a Korean university class; Korean-speaking, little prior knowledge of Russia |
 | Communication Intent | Introduce Russian tea culture — history, what tea is drunk, the samovar, tea as communication — with slides supporting a live spoken talk rather than replacing it |
@@ -16,9 +16,9 @@
 | Delivery Context | Presenter-led live talk in a university classroom, shown from PowerPoint on a Windows PC; a video about the samovar is shown at slide 5 (inserted later by the presenter or dropped) |
 | Artifact Afterlife | Presenter edits the PPTX herself afterwards; may submit it to the professor |
 | Reading Mode | presentation |
-| Content Strategy | Slides carry short Korean phrases and keywords condensed from the presenter's script, with Russian words as accents (Самовар, Тула, «Давай попьём чаю»); facts only from the script; the full Korean script goes verbatim into speaker notes |
-| Design Style | Direction 1 "Folk classic" — cream field, cherry-red and gold, Khokhloma/Zhostovo ornament bands and corners, symmetric festive compositions, native vector still-life illustrations |
-| AI Image Acquisition Path | not applicable (first version uses native vector illustrations; AI or user photos may replace them in a later revision) |
+| Content Strategy | Revision 2 (user): less text per slide; Korean titles numbered 01–05 as in 목차; separate final 감사합니다 slide. Slides carry short Korean phrases and keywords condensed from the presenter's script, with Russian words as accents (Самовар, Тула, «Давай попьём чаю»); facts only from the script; the full Korean script goes verbatim into speaker notes |
+| Design Style | Direction 1 "Folk classic", revised to a light theme: cream paper field, red-beige Pavlovo Posad floral border stripes, vintage watercolor-gouache AI illustrations in thin gold frames, few words per slide, Korean numbered section titles |
+| AI Image Acquisition Path | api |
 | Generation Mode | continuous |
 | Spec Refinement | disabled |
 | Speaker Notes | enabled — final Stage-2 proactive policy (presenter's Korean script, verbatim) |
@@ -60,6 +60,13 @@
 | Body text | #2B2220 | Body copy |
 | Secondary text | #6E5E54 | Captions, annotations, Russian glosses |
 | Divider | #E2D3B8 | Hairlines, table rules, panel borders |
+
+### AI Image Strategy
+
+- **Image Rendering**: custom
+- **Image Rendering Behavior**: Light vintage watercolor-gouache illustration on warm cream paper; soft painted edges fading into the background, deep red Pavlovo Posad roses with sage-green leaves and gold accents, polished brass and rose-painted porcelain, airy storybook warmth; no text in images.
+- **Visual**: isolated vignettes and light paper backgrounds with red-beige shawl border stripes
+- **Mood**: a cosy Russian tea table in a vintage illustrated gift book
 
 ## IV. Typography System
 
@@ -116,6 +123,16 @@
 
 | Filename | Dimensions | Ratio | Purpose | Type | Image pattern | Crop Policy | Acquire Via | Status | Reference | text_policy | page_role |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| bg_border.png | 2752x1536 | 16:9 | Cover and conclusion background with shawl stripes | Background | Full-bleed background | adaptive | ai | Generated | Cream paper with Pavlovo Posad stripes at both edges | none | hero_page |
+| bg_content.png | 2752x1536 | 16:9 | Content and section background | Background | Full-bleed background | adaptive | ai | Generated | Cream paper, one shawl stripe on the left, rose spray top right | none | local |
+| cover_samovar.png | 2400x1792 | 4:3 | Cover hero still life | Illustration | Framed arch picture beside the title | adaptive | ai | Generated | Samovar, rose teapot, baranki, jam, shawl | none | hero_page |
+| toc_teapot.png | 1792x2400 | 3:4 | Contents accent | Illustration | Framed tall picture beside the list | adaptive | ai | Generated | Rose teapot and cups | none | local |
+| p03_caravan.png | 2400x1792 | 4:3 | History scene | Illustration | Framed picture beside the timeline | adaptive | ai | Generated | Tea caravan of camels toward a Russian town | none | local |
+| p04_tea_table.png | 2400x1792 | 4:3 | Tea habits still life | Illustration | Framed picture beside the table | adaptive | ai | Generated | Tea glass in podstakannik, lemon, jam, honey | none | local |
+| p05_samovar.png | 1792x2400 | 3:4 | Samovar portrait | Illustration | Framed arch picture | adaptive | ai | Generated | Single brass Tula samovar | none | local |
+| p06_tea_party.png | 2400x1792 | 4:3 | Hospitality scene | Illustration | Framed picture above the quote band | adaptive | ai | Generated | Family tea party around a samovar | none | local |
+| p07_cups.png | 2752x1536 | 16:9 | Shared tea cultures | Illustration | Wide framed picture | adaptive | ai | Generated | Six different tea vessels in a semicircle | none | local |
+| p09_thanks.png | 2752x1536 | 16:9 | Thank-you background | Background | Full-bleed background | adaptive | ai | Generated | Cream paper, shawl corners, steaming cup | none | hero_page |
 
 ## IX. Content Outline
 
@@ -123,87 +140,92 @@
 
 #### Slide 01 - Cover
 
-- **Audience move**: Unaware of the topic → curious about Russian tea as more than a drink
+- **Audience move**: Unaware of the topic → curious about Russian tea culture
 - **Relationships**: none
-- **Composition**: Text column left (kicker, two-line display title, gold divider, name); samovar still-life with cup and baranki right; cherry ornament bands on both side edges
-- **Cover impact**: Hook — the samovar tea table as the image of Russian hospitality, with the line 차는 단순한 음료가 아닙니다
+- **Cover impact**: Hook — the illustrated samovar tea table
 - **Title**: 러시아의 차 문화
 - **Core message**: Russian tea culture, presented by 추빌리나 알렉산드라
-- **Content**: Kicker ЧАЙНАЯ КУЛЬТУРА РОССИИ · Title 러시아의 차 문화 · Hook 차는 단순한 음료가 아닙니다 · Name 추빌리나 알렉산드라
-- **Motion suggestion**: The samovar continues as the identity object on P05 (Morph candidate)
+- **Content**: Title 러시아의 차 문화 · subtitle Чайная культура России · name 추빌리나 알렉산드라
+- **Images**: bg_border.png full-bleed; cover_samovar.png framed beside the title
 
 #### Slide 02 - Contents
 
-- **Audience move**: No map of the talk → knows the five steps ahead
-- **Relationships**: order — 역사 → 어떤 차 → 사모바르 → 소통과 환대 → 구소련 국가들
-- **Composition**: Five numbered steps in one calm row or column, each with a small folk motif; title at top
+- **Audience move**: No map of the talk → knows the five numbered sections
+- **Relationships**: order — 01 → 02 → 03 → 04 → 05
 - **Title**: 목차
-- **Core message**: The talk moves from history to the meaning of tea between people
+- **Core message**: Five sections from history to tea between people
 - **Content**: 01 러시아 차 문화의 역사 · 02 어떤 차를 마실까? · 03 사모바르와 전통 · 04 차를 통한 소통과 환대 · 05 구소련 국가들의 차 문화
+- **Images**: bg_content.png full-bleed; toc_teapot.png framed
 
-### Part 2: History and practice
+### Part 2: Sections
 
-#### Slide 03 - History
+#### Slide 03 - 01 History
 
-- **Audience move**: Assumes tea is native to Russia → sees it arrived from China and Mongolia and spread from the rich to everyone
-- **Relationships**: order — 중국·몽골 → 1638 gift from Altyn Khan to the tsar → expensive drink for the rich → trade develops → XVIII–XIX centuries spread to ordinary people → everyday drink
-- **Composition**: Horizontal timeline with three stations; 1638 as a hero numeral
-- **Title**: 러시아 차 문화의 역사
-- **Core message**: Tea came through China and Mongolia and became an everyday drink
-- **Content**: 중국·몽골을 통해 · 1638년 — 알틴 칸 → 바실리 스타르코프 → 차르 · 처음: 비싼 음료, 부유한 사람들 · 18–19세기: 일반 사람들에게 · 특별한 음료 → 일상적인 음료
+- **Audience move**: Assumes tea is native → sees it arrived via China and Mongolia and spread to everyone
+- **Relationships**: order — 중국 · 몽골 → 1638 gift of Altyn Khan → 18–19th centuries for everyone
+- **Title**: 01 러시아 차 문화의 역사
+- **Core message**: Tea came through China and Mongolia and became everyone's drink
+- **Content**: 중국 · 몽골 · 1638 알틴 칸의 선물 · 18–19세기 모두의 음료로
+- **Images**: bg_content.png; p03_caravan.png framed
 
-#### Slide 04 - What tea Russians drink
+#### Slide 04 - 02 What tea
 
-- **Audience move**: Does not know Russian tea habits → can name black tea, its time of day, and its companions
-- **Relationships**: contrast — morning coffee vs afternoon/after-meal tea; membership — sugar, lemon, honey, jam as additions; link — cold → hot tea with raspberry jam, honey, lemon
-- **Composition**: Small editable table left; illustrated cues (cup of black tea, lemon, honey, jam jar) right; a small highlighted card for the cold remedy
-- **Title**: 러시아 사람들은 어떤 차를 마실까?
-- **Core message**: Black tea is the everyday favourite, drunk after meals with jam, lemon or honey
-- **Content**: Table rows — 아침: 커피 / 오후·식사 후: 차 / 가장 인기: 홍차 (녹차·허브차도) / 함께: 설탕·레몬·꿀·잼 · Card — 감기에 걸렸을 때: 라즈베리 잼·꿀·레몬을 넣은 따뜻한 차
-- **Visualization**: tea-habits table (table/record_table) — columns 언제 / 무엇을; rows as in Content
+- **Audience move**: Does not know Russian habits → names black tea, its time and companions
+- **Relationships**: contrast — morning coffee vs tea after meals; membership — lemon, honey, jam
+- **Title**: 02 어떤 차를 마실까?
+- **Core message**: Black tea after meals, with lemon, honey or jam
+- **Content**: Table — 아침: 커피 / 식사 후: 홍차 / 함께: 레몬 · 꿀 · 잼 · Note — 감기 → 라즈베리 잼
+- **Visualization**: tea-habits table (table/record_table), columns 언제 / 무엇을
 - **Native-ready**: tea-habits=yes
+- **Images**: bg_content.png; p04_tea_table.png framed
 
-### Part 3: The samovar
+#### Slide 05 - 03 Samovar
 
-#### Slide 05 - Samovar
+- **Audience move**: Never saw a samovar → knows what it does and why tea time is long
+- **Relationships**: link — keeps water hot → long tea time; order — 우랄 → 툴라; membership — strong brew + hot water
+- **Title**: 03 사모바르와 전통
+- **Core message**: The samovar keeps water hot, so tea time becomes long conversation
+- **Content**: 물을 오래 뜨겁게 · 우랄 → 툴라 · 진한 차 + 뜨거운 물 · video frame 영상
+- **Images**: bg_content.png; p05_samovar.png framed
 
-- **Audience move**: Has never seen a samovar → understands what it does and why it made tea time long
-- **Relationships**: link — samovar keeps water hot → people keep drinking → long conversations; order — Ural (early records) → Tula (famous production); membership — strong brew (заварка) + hot water from samovar = adjustable strength
-- **Composition**: Large samovar illustration as focal; short definition beside it; a small formula strip 진한 차 + 뜨거운 물; a framed video placeholder area labelled for the presenter to replace or delete
-- **Title**: 사모바르와 전통적인 차 문화
-- **Core message**: The samovar keeps water hot for a long time, so tea time becomes long conversation
-- **Content**: Kicker САМОВАР · 물을 끓이고 오랫동안 뜨겁게 유지하는 기구 · 우랄 → 툴라 (Тула) · 진한 차 + 뜨거운 물 = 농도 조절 · 오래 마시며 오래 이야기 · Video frame: 영상 — 사모바르는 어떻게 작동할까?
-- **Motion suggestion**: Samovar continues from P01 as the identity object (Morph candidate)
-
-### Part 4: Tea between people
-
-#### Slide 06 - Communication and hospitality
+#### Slide 06 - 04 Hospitality
 
 - **Audience move**: Sees tea as a drink → sees it as an invitation to meet
-- **Relationships**: link — guest arrives → tea with treats (cookies, bread, jam, baranki) → welcome; link — «Давай попьём чаю» → 차 한잔하자 → let's meet and talk
-- **Composition**: Hero quote «Давай попьём чаю» large in the title serif with Korean meaning beneath; small table still-life (baranki, jam, cups) as supporting visual
-- **Title**: 차를 통한 소통과 환대
-- **Core message**: Offering tea means welcoming someone and inviting conversation
-- **Content**: 손님이 오면 → 차 + 과자·빵·잼·바란키 · 서두르지 않는 시간 · Quote «Давай попьём чаю» = "차 한잔하자" → 만나서 이야기하자
+- **Relationships**: link — 손님 → 차와 바란키 → 환영; «Давай попьём чаю» → 만나서 이야기하자
+- **Title**: 04 차를 통한 소통과 환대
+- **Core message**: Offering tea means welcome and conversation
+- **Content**: 손님 → 차와 바란키 → 환영 · quote «Давай попьём чаю» = 차 한잔하자
+- **Images**: bg_content.png; p06_tea_party.png framed
 
-#### Slide 07 - Former USSR countries
+#### Slide 07 - 05 Former USSR
 
-- **Audience move**: Thinks this is uniquely Russian → sees a shared tea culture across the former USSR with local differences
-- **Relationships**: membership — many former USSR countries share tea in daily life and hospitality; contrast — ways and traditions differ; overlap — gathering and talking over tea is common
-- **Composition**: Breathing page — a ring of several abstract cups around one central samovar or table, one short statement
-- **Title**: 구소련 국가들의 차 문화
-- **Core message**: Tea culture is shared across many former USSR countries, though traditions differ
-- **Content**: 구소련의 여러 나라에서도 차는 일상과 환대의 중심 · 방법과 전통은 나라마다 다름 · 공통점: 함께 모여 이야기하는 시간
+- **Audience move**: Thinks it is uniquely Russian → sees a shared culture with local differences
+- **Relationships**: membership — many former USSR countries; overlap — gathering and talking over tea
+- **Title**: 05 구소련 국가들의 차 문화
+- **Core message**: Many former USSR countries share tea culture, traditions differ
+- **Content**: 나라마다 다른 전통 · 공통점: 함께 모여 이야기
+- **Images**: bg_content.png; p07_cups.png framed
+
+### Part 3: Closing
 
 #### Slide 08 - Conclusion
 
-- **Audience move**: Has heard the parts → holds one takeaway about tea and closeness
-- **Relationships**: membership — three conclusions: 역사, 일상, 소통; link — they lead to the closing message
-- **Composition**: Three small medallions (history, everyday, communication) above one centred takeaway line; ornament bands echo the cover; 감사합니다 as the final line
-- **Closing impact**: Takeaway — 러시아에서 차 한잔은 사람들을 만나고 가까워지는 기회
+- **Audience move**: Has heard the parts → holds one takeaway
+- **Relationships**: membership — 역사, 일상, 소통 lead to the takeaway
+- **Closing impact**: Takeaway — 차 한잔 = 가까워지는 기회
 - **Title**: 마무리
-- **Core message**: In Russia, a cup of tea is a chance to meet and become closer
-- **Content**: 역사 — 오랜 시간에 걸쳐 · 일상 — 매일의 음료 · 소통 — 함께 보내는 시간 · Takeaway 차 한잔 = 가까워지는 기회 · 감사합니다
+- **Core message**: In Russia, a cup of tea is a chance to become closer
+- **Content**: 역사 · 일상 · 소통 · takeaway 차 한잔 = 만나서 가까워지는 기회
+- **Images**: bg_border.png full-bleed
+
+#### Slide 09 - Thank you
+
+- **Audience move**: Talk ends → warm close
+- **Relationships**: none
+- **Title**: 감사합니다
+- **Core message**: Thank you for listening
+- **Content**: 감사합니다 · Спасибо за внимание · 추빌리나 알렉산드라
+- **Images**: p09_thanks.png full-bleed
 
 ## X. Speaker Notes Requirements
 

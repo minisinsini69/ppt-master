@@ -4,47 +4,51 @@
   "target": "/home/user/ppt-master/projects/russian_tea_ppt169_20261124",
   "source_fingerprint": {
     "algorithm": "sha256",
-    "digest": "479c786d0e803f271e9c819c77a029eb55cea939d9d0f43fa58bbc670b1b47d3",
-    "file_count": 8,
+    "digest": "4820d0c77b50817365662dbd5ab0bde5eece4b035227cb05cb79fccfa7a4ba3e",
+    "file_count": 9,
     "files": [
       {
         "file": "01_cover.svg",
-        "sha256": "7ababd3246ffafd3b7c3ae3144ebb38d6b4811978ee2f043a17467c4ebdef371"
+        "sha256": "60f2c78948d4d7cb0b0324aac0cb65e5adfd3c0e593985d8d82474525632e38f"
       },
       {
         "file": "02_contents.svg",
-        "sha256": "04f8408190bc4eca45c401c21fd11806a933ac38b8c038e42734b07bceb5b01d"
+        "sha256": "1d1f03b1bd8326e353fa711a2dc205f40fd3003027320382c346912f1c4cdc1b"
       },
       {
         "file": "03_history.svg",
-        "sha256": "d9ddb0641de47ef6469a960d357fe5c85314e8bb9d55a18787b1f9d95772846c"
+        "sha256": "142d16c1bc5fb9573592c74843f620cc242feb085fd181d7b6fdb042ea2d3b01"
       },
       {
         "file": "04_tea.svg",
-        "sha256": "5942384df273876bea4091484667ab13d07135b879d77eeb3b3b7aab96f1b14e"
+        "sha256": "89e7490a02d48587efb921daae3fa38b3cb86763fb283f1a053661a6ce86bf73"
       },
       {
         "file": "05_samovar.svg",
-        "sha256": "5b3da101336947164580ca14406135ad266af20793dc2497d4090d815205b09b"
+        "sha256": "070c36b745d6d2370e1f8a06e92d0c5c1973335dc9024227471d9184165c4264"
       },
       {
         "file": "06_hospitality.svg",
-        "sha256": "6e3b267ed65c98a1e19a1de172100695dfddc157ab7a53990aaf16e897ac4f60"
+        "sha256": "3999fb2a9faf341836cf77a35914f90e973bf14747ab03506760e74228ac35ec"
       },
       {
         "file": "07_ussr.svg",
-        "sha256": "edc7660000ab8ada876f4a77566f8e20ddd829450439d7f03a3f803bf7fb9406"
+        "sha256": "3946f153d210fb9efb0412748f25b509222b33cbb4f8d944b3ddbeea451e0526"
       },
       {
         "file": "08_conclusion.svg",
-        "sha256": "9ceca98da28bfc86a683ce32292f5dcdc3e1c789d728ef85590bede5682f9cb8"
+        "sha256": "96cead364dab3713ba8984e36ce78acc4b6709ef50260e3e1d3a596a526c543a"
+      },
+      {
+        "file": "09_thanks.svg",
+        "sha256": "820176e9f85cae1953e16272f7d53d4a91a188be623e3cc2a88904e33164666c"
       }
     ]
   },
   "summary": {
-    "total": 8,
-    "passed": 7,
-    "warnings": 1,
+    "total": 9,
+    "passed": 4,
+    "warnings": 5,
     "errors": 0
   },
   "issue_types": {},
@@ -54,11 +58,31 @@
       "issues": []
     },
     "introduced": {
-      "count": 1,
+      "count": 6,
       "issues": [
         {
-          "file": "08_conclusion.svg",
-          "message": "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (6 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): thanks:font-family None -> 'Batang, Georgia, serif'; thanks:text-anchor None -> 'middle'; text[60]:font-family 'Batang, Georgia, serif' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
+          "file": "02_contents.svg",
+          "message": "Image ../images/toc_teapot.png is 1792x2400 and renders at 0.17x scale in a 300x400 slice frame; the source is 4.5 MiB — file-size advisory only, not an aspect-ratio warning; consider a smaller source asset, or export with svg_to_pptx.py --image-sizing display to downsize at export time"
+        },
+        {
+          "file": "03_history.svg",
+          "message": "Image ../images/p03_caravan.png is 2400x1792 and renders at 0.20x scale in a 480x360 slice frame; the source is 6.3 MiB — file-size advisory only, not an aspect-ratio warning; consider a smaller source asset, or export with svg_to_pptx.py --image-sizing display to downsize at export time"
+        },
+        {
+          "file": "04_tea.svg",
+          "message": "Image ../images/p04_tea_table.png is 2400x1792 and renders at 0.19x scale in a 450x338 slice frame; the source is 4.6 MiB — file-size advisory only, not an aspect-ratio warning; consider a smaller source asset, or export with svg_to_pptx.py --image-sizing display to downsize at export time"
+        },
+        {
+          "file": "05_samovar.svg",
+          "message": "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"samovar-facts\"> x=220.0, y=354.0..410.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate."
+        },
+        {
+          "file": "05_samovar.svg",
+          "message": "Image ../images/p05_samovar.png is 1792x2400 and renders at 0.18x scale in a 300x440 slice frame; the source is 4.8 MiB — file-size advisory only, not an aspect-ratio warning; consider a smaller source asset, or export with svg_to_pptx.py --image-sizing display to downsize at export time"
+        },
+        {
+          "file": "06_hospitality.svg",
+          "message": "Image ../images/p06_tea_party.png is 2400x1792 and renders at 0.20x scale in a 480x340 slice frame; the source is 5.2 MiB — file-size advisory only, not an aspect-ratio warning; consider a smaller source asset, or export with svg_to_pptx.py --image-sizing display to downsize at export time"
         }
       ]
     },
@@ -76,174 +100,62 @@
   },
   "drift": {
     "colors": {
-      "#3A2A22": [
-        "02_contents.svg"
-      ],
-      "#5A3D12": [
-        "01_cover.svg",
-        "05_samovar.svg"
-      ],
-      "#6E2A0C": [
-        "04_tea.svg"
-      ],
-      "#7A2E0E": [
-        "01_cover.svg",
-        "02_contents.svg"
-      ],
-      "#8C6420": [
-        "01_cover.svg",
-        "04_tea.svg",
-        "05_samovar.svg"
-      ],
-      "#9C6A1C": [
-        "04_tea.svg"
-      ],
-      "#9C7024": [
-        "01_cover.svg",
-        "04_tea.svg",
-        "05_samovar.svg"
-      ],
-      "#A8681A": [
-        "04_tea.svg"
-      ],
-      "#B3202C": [
-        "02_contents.svg",
-        "03_history.svg",
-        "04_tea.svg",
-        "05_samovar.svg",
-        "06_hospitality.svg"
-      ],
-      "#B5521B": [
-        "04_tea.svg"
-      ],
-      "#B87A30": [
-        "01_cover.svg"
-      ],
-      "#B8862F": [
-        "01_cover.svg",
-        "04_tea.svg",
-        "05_samovar.svg"
-      ],
-      "#B9771C": [
-        "04_tea.svg"
-      ],
-      "#C98A3D": [
-        "01_cover.svg",
-        "04_tea.svg",
-        "06_hospitality.svg"
-      ],
-      "#D8C8AE": [
-        "01_cover.svg",
-        "02_contents.svg",
-        "04_tea.svg",
-        "05_samovar.svg"
-      ],
-      "#D9A055": [
-        "01_cover.svg",
-        "06_hospitality.svg"
-      ],
-      "#D9B35E": [
-        "01_cover.svg",
-        "05_samovar.svg"
-      ],
-      "#DCCFB9": [
-        "01_cover.svg",
-        "02_contents.svg",
-        "05_samovar.svg"
-      ],
-      "#E0B53A": [
-        "04_tea.svg"
-      ],
       "#E8C873": [
-        "01_cover.svg",
         "02_contents.svg",
         "03_history.svg",
-        "04_tea.svg",
-        "05_samovar.svg",
         "06_hospitality.svg",
         "08_conclusion.svg"
       ],
-      "#E9DFCF": [
-        "01_cover.svg",
-        "02_contents.svg",
-        "05_samovar.svg"
-      ],
-      "#F2B84B": [
-        "04_tea.svg"
-      ],
-      "#F2D88A": [
-        "01_cover.svg",
-        "04_tea.svg",
-        "05_samovar.svg"
-      ],
-      "#F4D35E": [
-        "04_tea.svg"
-      ],
-      "#F7D27A": [
-        "04_tea.svg"
-      ],
-      "#FFF6D8": [
-        "01_cover.svg",
-        "05_samovar.svg"
-      ],
       "#FFFDF8": [
-        "01_cover.svg",
         "02_contents.svg",
-        "05_samovar.svg"
-      ],
-      "#FFFFFF": [
-        "04_tea.svg"
+        "04_tea.svg",
+        "05_samovar.svg",
+        "08_conclusion.svg"
       ]
     },
     "fonts": {},
-    "sizes": {
-      "72": [
-        "06_hospitality.svg"
-      ]
-    }
+    "sizes": {}
   },
   "carrier_receipt": {
     "scope": "informational-not-a-quota",
-    "pages": 8,
+    "pages": 9,
     "totals": {
-      "text_elements": 84,
-      "image_placements": 0,
+      "text_elements": 56,
+      "image_placements": 16,
       "icons": 0,
-      "svg_geometry_elements": 295,
-      "preset_shapes": 5,
-      "page_frame_elements": 88,
-      "marker_uses": 1,
-      "inline_emphasis_runs": 4,
-      "gradient_uses": 23,
+      "svg_geometry_elements": 56,
+      "preset_shapes": 2,
+      "page_frame_elements": 0,
+      "marker_uses": 0,
+      "inline_emphasis_runs": 2,
+      "gradient_uses": 0,
       "filter_uses": 0,
       "text_effects": 0
     },
     "pages_with": {
-      "images": 0,
+      "images": 9,
       "icons": 0,
-      "presets": 4,
+      "presets": 2,
       "charts": 0,
       "tables": 1,
       "formulas": 0,
-      "inline_emphasis_runs": 3,
-      "gradient_uses": 4,
+      "inline_emphasis_runs": 2,
+      "gradient_uses": 0,
       "filter_uses": 0,
       "text_effects": 0
     },
     "relationship_pages": 7,
     "geometry_elements": {
-      "circle": 98,
-      "ellipse": 45,
-      "line": 24,
-      "path": 88,
+      "circle": 20,
+      "ellipse": 0,
+      "line": 21,
+      "path": 3,
       "polygon": 0,
       "polyline": 0,
-      "rect": 40
+      "rect": 12
     },
     "preset_names": {
-      "plaque": 1,
       "ribbon2": 1,
-      "rightArrow": 2,
       "triangle": 1
     },
     "native_objects": {
@@ -253,7 +165,10 @@
       "other": 0,
       "table": 1
     },
-    "image_page_max_frame_share_range": []
+    "image_page_max_frame_share_range": [
+      1.0,
+      1.0
+    ]
   },
   "project_issues": {
     "template": [],
@@ -272,32 +187,452 @@
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 4,
+          "text_elements": 3,
           "images": {
-            "placements": 0,
-            "files": [],
-            "max_frame_share": 0.0
+            "placements": 2,
+            "files": [
+              "bg_border.png",
+              "cover_samovar.png"
+            ],
+            "max_frame_share": 1.0
           },
           "icons": 0,
           "effects": {
             "inline_emphasis_runs": 0,
-            "gradient_uses": 9,
+            "gradient_uses": 0,
             "filter_uses": 0,
             "text_effects": 0
           },
           "geometry": {
             "svg_elements": {
-              "rect": 5,
-              "circle": 21,
-              "ellipse": 18,
+              "rect": 0,
+              "circle": 1,
+              "ellipse": 0,
               "line": 2,
               "polyline": 0,
               "polygon": 0,
-              "path": 28
+              "path": 2
             },
             "preset_shapes": 0,
             "preset_names": {},
-            "page_frame_elements": 26,
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Batang, Georgia, serif",
+          "Batang, Times New Roman, serif",
+          "Malgun Gothic, Segoe UI, sans-serif"
+        ],
+        "text_elements": 3,
+        "tspan_elements": 1
+      },
+      "passed": true,
+      "source_sha256": "60f2c78948d4d7cb0b0324aac0cb65e5adfd3c0e593985d8d82474525632e38f"
+    },
+    {
+      "file": "02_contents.svg",
+      "path": "/home/user/ppt-master/projects/russian_tea_ppt169_20261124/svg_output/02_contents.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Image ../images/toc_teapot.png is 1792x2400 and renders at 0.17x scale in a 300x400 slice frame; the source is 4.5 MiB — file-size advisory only, not an aspect-ratio warning; consider a smaller source asset, or export with svg_to_pptx.py --image-sizing display to downsize at export time"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 11,
+          "images": {
+            "placements": 2,
+            "files": [
+              "bg_content.png",
+              "toc_teapot.png"
+            ],
+            "max_frame_share": 1.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 6,
+              "ellipse": 0,
+              "line": 2,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Batang, Georgia, serif",
+          "Batang, Times New Roman, serif",
+          "Malgun Gothic, Segoe UI, sans-serif"
+        ],
+        "text_elements": 11,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "colors": [
+            "#E8C873",
+            "#FFFDF8"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "1d1f03b1bd8326e353fa711a2dc205f40fd3003027320382c346912f1c4cdc1b"
+    },
+    {
+      "file": "03_history.svg",
+      "path": "/home/user/ppt-master/projects/russian_tea_ppt169_20261124/svg_output/03_history.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Image ../images/p03_caravan.png is 2400x1792 and renders at 0.20x scale in a 480x360 slice frame; the source is 6.3 MiB — file-size advisory only, not an aspect-ratio warning; consider a smaller source asset, or export with svg_to_pptx.py --image-sizing display to downsize at export time"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 7,
+          "images": {
+            "placements": 2,
+            "files": [
+              "bg_content.png",
+              "p03_caravan.png"
+            ],
+            "max_frame_share": 1.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 3,
+              "ellipse": 0,
+              "line": 2,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Batang, Georgia, serif",
+          "Batang, Times New Roman, serif",
+          "Malgun Gothic, Segoe UI, sans-serif"
+        ],
+        "text_elements": 7,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "colors": [
+            "#E8C873"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "142d16c1bc5fb9573592c74843f620cc242feb085fd181d7b6fdb042ea2d3b01"
+    },
+    {
+      "file": "04_tea.svg",
+      "path": "/home/user/ppt-master/projects/russian_tea_ppt169_20261124/svg_output/04_tea.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Image ../images/p04_tea_table.png is 2400x1792 and renders at 0.19x scale in a 450x338 slice frame; the source is 4.6 MiB — file-size advisory only, not an aspect-ratio warning; consider a smaller source asset, or export with svg_to_pptx.py --image-sizing display to downsize at export time"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 11,
+          "images": {
+            "placements": 2,
+            "files": [
+              "bg_content.png",
+              "p04_tea_table.png"
+            ],
+            "max_frame_share": 1.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 1,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 7,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 5,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 1,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Batang, Georgia, serif",
+          "Batang, Times New Roman, serif",
+          "Malgun Gothic, Segoe UI, sans-serif"
+        ],
+        "text_elements": 11,
+        "tspan_elements": 1,
+        "contextual_values": {
+          "colors": [
+            "#FFFDF8"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "89e7490a02d48587efb921daae3fa38b3cb86763fb283f1a053661a6ce86bf73"
+    },
+    {
+      "file": "05_samovar.svg",
+      "path": "/home/user/ppt-master/projects/russian_tea_ppt169_20261124/svg_output/05_samovar.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id=\"samovar-facts\"> x=220.0, y=354.0..410.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy=\"0\". Keep semantically independent text frames separate.",
+        "Image ../images/p05_samovar.png is 1792x2400 and renders at 0.18x scale in a 300x440 slice frame; the source is 4.8 MiB — file-size advisory only, not an aspect-ratio warning; consider a smaller source asset, or export with svg_to_pptx.py --image-sizing display to downsize at export time"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 6,
+          "images": {
+            "placements": 2,
+            "files": [
+              "bg_content.png",
+              "p05_samovar.png"
+            ],
+            "max_frame_share": 1.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 1,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 1
+            },
+            "preset_shapes": 1,
+            "preset_names": {
+              "triangle": 1
+            },
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Batang, Georgia, serif",
+          "Batang, Times New Roman, serif",
+          "Malgun Gothic, Segoe UI, sans-serif"
+        ],
+        "text_elements": 6,
+        "tspan_elements": 0,
+        "contextual_values": {
+          "colors": [
+            "#FFFDF8"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "070c36b745d6d2370e1f8a06e92d0c5c1973335dc9024227471d9184165c4264"
+    },
+    {
+      "file": "06_hospitality.svg",
+      "path": "/home/user/ppt-master/projects/russian_tea_ppt169_20261124/svg_output/06_hospitality.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [
+        "Image ../images/p06_tea_party.png is 2400x1792 and renders at 0.20x scale in a 480x340 slice frame; the source is 5.2 MiB — file-size advisory only, not an aspect-ratio warning; consider a smaller source asset, or export with svg_to_pptx.py --image-sizing display to downsize at export time"
+      ],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 6,
+          "images": {
+            "placements": 2,
+            "files": [
+              "bg_content.png",
+              "p06_tea_party.png"
+            ],
+            "max_frame_share": 1.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 1,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 3,
+              "ellipse": 0,
+              "line": 4,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Batang, Georgia, serif",
+          "Batang, Times New Roman, serif",
+          "Malgun Gothic, Segoe UI, sans-serif"
+        ],
+        "text_elements": 6,
+        "tspan_elements": 1,
+        "contextual_values": {
+          "colors": [
+            "#E8C873"
+          ]
+        }
+      },
+      "passed": true,
+      "source_sha256": "3999fb2a9faf341836cf77a35914f90e973bf14747ab03506760e74228ac35ec"
+    },
+    {
+      "file": "07_ussr.svg",
+      "path": "/home/user/ppt-master/projects/russian_tea_ppt169_20261124/svg_output/07_ussr.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 4,
+          "images": {
+            "placements": 2,
+            "files": [
+              "bg_content.png",
+              "p07_cups.png"
+            ],
+            "max_frame_share": 1.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 0,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 1,
+              "circle": 1,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
             "marker_uses": {
               "start": 0,
               "mid": 0,
@@ -318,66 +653,50 @@
           "Malgun Gothic, Segoe UI, sans-serif"
         ],
         "text_elements": 4,
-        "tspan_elements": 1,
-        "contextual_values": {
-          "colors": [
-            "#5A3D12",
-            "#7A2E0E",
-            "#8C6420",
-            "#9C7024",
-            "#B87A30",
-            "#B8862F",
-            "#C98A3D",
-            "#D8C8AE",
-            "#D9A055",
-            "#D9B35E",
-            "#DCCFB9",
-            "#E8C873",
-            "#E9DFCF",
-            "#F2D88A",
-            "#FFF6D8",
-            "#FFFDF8"
-          ]
-        }
+        "tspan_elements": 0
       },
       "passed": true,
-      "source_sha256": "7ababd3246ffafd3b7c3ae3144ebb38d6b4811978ee2f043a17467c4ebdef371"
+      "source_sha256": "3946f153d210fb9efb0412748f25b509222b33cbb4f8d944b3ddbeea451e0526"
     },
     {
-      "file": "02_contents.svg",
-      "path": "/home/user/ppt-master/projects/russian_tea_ppt169_20261124/svg_output/02_contents.svg",
+      "file": "08_conclusion.svg",
+      "path": "/home/user/ppt-master/projects/russian_tea_ppt169_20261124/svg_output/08_conclusion.svg",
       "exists": true,
       "errors": [],
       "warnings": [],
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 13,
+          "text_elements": 5,
           "images": {
-            "placements": 0,
-            "files": [],
-            "max_frame_share": 0.0
+            "placements": 1,
+            "files": [
+              "bg_border.png"
+            ],
+            "max_frame_share": 1.0
           },
           "icons": 0,
           "effects": {
             "inline_emphasis_runs": 0,
-            "gradient_uses": 2,
+            "gradient_uses": 0,
             "filter_uses": 0,
             "text_effects": 0
           },
           "geometry": {
             "svg_elements": {
-              "rect": 2,
-              "circle": 20,
-              "ellipse": 3,
+              "rect": 0,
+              "circle": 4,
+              "ellipse": 0,
               "line": 2,
               "polyline": 0,
               "polygon": 0,
-              "path": 10
+              "path": 0
             },
-            "preset_shapes": 0,
-            "preset_names": {},
-            "page_frame_elements": 1,
+            "preset_shapes": 1,
+            "preset_names": {
+              "ribbon2": 1
+            },
+            "page_frame_elements": 0,
             "marker_uses": {
               "start": 0,
               "mid": 0,
@@ -396,65 +715,59 @@
           "Batang, Georgia, serif",
           "Malgun Gothic, Segoe UI, sans-serif"
         ],
-        "text_elements": 13,
+        "text_elements": 5,
         "tspan_elements": 0,
         "contextual_values": {
           "colors": [
-            "#3A2A22",
-            "#7A2E0E",
-            "#B3202C",
-            "#D8C8AE",
-            "#DCCFB9",
             "#E8C873",
-            "#E9DFCF",
             "#FFFDF8"
           ]
         }
       },
       "passed": true,
-      "source_sha256": "04f8408190bc4eca45c401c21fd11806a933ac38b8c038e42734b07bceb5b01d"
+      "source_sha256": "96cead364dab3713ba8984e36ce78acc4b6709ef50260e3e1d3a596a526c543a"
     },
     {
-      "file": "03_history.svg",
-      "path": "/home/user/ppt-master/projects/russian_tea_ppt169_20261124/svg_output/03_history.svg",
+      "file": "09_thanks.svg",
+      "path": "/home/user/ppt-master/projects/russian_tea_ppt169_20261124/svg_output/09_thanks.svg",
       "exists": true,
       "errors": [],
       "warnings": [],
       "info": {
         "viewbox": "0 0 1280 720",
         "carrier_receipt": {
-          "text_elements": 10,
+          "text_elements": 3,
           "images": {
-            "placements": 0,
-            "files": [],
-            "max_frame_share": 0.0
+            "placements": 1,
+            "files": [
+              "p09_thanks.png"
+            ],
+            "max_frame_share": 1.0
           },
           "icons": 0,
           "effects": {
-            "inline_emphasis_runs": 2,
+            "inline_emphasis_runs": 0,
             "gradient_uses": 0,
             "filter_uses": 0,
             "text_effects": 0
           },
           "geometry": {
             "svg_elements": {
-              "rect": 2,
-              "circle": 8,
+              "rect": 0,
+              "circle": 1,
               "ellipse": 0,
               "line": 2,
               "polyline": 0,
               "polygon": 0,
-              "path": 6
+              "path": 0
             },
-            "preset_shapes": 1,
-            "preset_names": {
-              "plaque": 1
-            },
-            "page_frame_elements": 11,
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 0,
             "marker_uses": {
               "start": 0,
               "mid": 0,
-              "end": 1
+              "end": 0
             }
           },
           "native_objects": {
@@ -470,375 +783,11 @@
           "Batang, Times New Roman, serif",
           "Malgun Gothic, Segoe UI, sans-serif"
         ],
-        "text_elements": 10,
-        "tspan_elements": 5,
-        "contextual_values": {
-          "colors": [
-            "#B3202C",
-            "#E8C873"
-          ]
-        }
+        "text_elements": 3,
+        "tspan_elements": 0
       },
       "passed": true,
-      "source_sha256": "d9ddb0641de47ef6469a960d357fe5c85314e8bb9d55a18787b1f9d95772846c"
-    },
-    {
-      "file": "04_tea.svg",
-      "path": "/home/user/ppt-master/projects/russian_tea_ppt169_20261124/svg_output/04_tea.svg",
-      "exists": true,
-      "errors": [],
-      "warnings": [],
-      "info": {
-        "viewbox": "0 0 1280 720",
-        "carrier_receipt": {
-          "text_elements": 15,
-          "images": {
-            "placements": 0,
-            "files": [],
-            "max_frame_share": 0.0
-          },
-          "icons": 0,
-          "effects": {
-            "inline_emphasis_runs": 0,
-            "gradient_uses": 4,
-            "filter_uses": 0,
-            "text_effects": 0
-          },
-          "geometry": {
-            "svg_elements": {
-              "rect": 14,
-              "circle": 9,
-              "ellipse": 3,
-              "line": 10,
-              "polyline": 0,
-              "polygon": 0,
-              "path": 7
-            },
-            "preset_shapes": 0,
-            "preset_names": {},
-            "page_frame_elements": 1,
-            "marker_uses": {
-              "start": 0,
-              "mid": 0,
-              "end": 0
-            }
-          },
-          "native_objects": {
-            "chart": 0,
-            "table": 1,
-            "formula_block": 0,
-            "formula_inline": 0,
-            "other": 0
-          }
-        },
-        "fonts": [
-          "Batang, Georgia, serif",
-          "Malgun Gothic, Segoe UI, sans-serif"
-        ],
-        "text_elements": 15,
-        "tspan_elements": 1,
-        "contextual_values": {
-          "colors": [
-            "#6E2A0C",
-            "#8C6420",
-            "#9C6A1C",
-            "#9C7024",
-            "#A8681A",
-            "#B3202C",
-            "#B5521B",
-            "#B8862F",
-            "#B9771C",
-            "#C98A3D",
-            "#D8C8AE",
-            "#E0B53A",
-            "#E8C873",
-            "#F2B84B",
-            "#F2D88A",
-            "#F4D35E",
-            "#F7D27A",
-            "#FFFFFF"
-          ]
-        }
-      },
-      "passed": true,
-      "source_sha256": "5942384df273876bea4091484667ab13d07135b879d77eeb3b3b7aab96f1b14e"
-    },
-    {
-      "file": "05_samovar.svg",
-      "path": "/home/user/ppt-master/projects/russian_tea_ppt169_20261124/svg_output/05_samovar.svg",
-      "exists": true,
-      "errors": [],
-      "warnings": [],
-      "info": {
-        "viewbox": "0 0 1280 720",
-        "carrier_receipt": {
-          "text_elements": 12,
-          "images": {
-            "placements": 0,
-            "files": [],
-            "max_frame_share": 0.0
-          },
-          "icons": 0,
-          "effects": {
-            "inline_emphasis_runs": 1,
-            "gradient_uses": 8,
-            "filter_uses": 0,
-            "text_effects": 0
-          },
-          "geometry": {
-            "svg_elements": {
-              "rect": 6,
-              "circle": 11,
-              "ellipse": 15,
-              "line": 1,
-              "polyline": 0,
-              "polygon": 0,
-              "path": 19
-            },
-            "preset_shapes": 1,
-            "preset_names": {
-              "triangle": 1
-            },
-            "page_frame_elements": 11,
-            "marker_uses": {
-              "start": 0,
-              "mid": 0,
-              "end": 0
-            }
-          },
-          "native_objects": {
-            "chart": 0,
-            "table": 0,
-            "formula_block": 0,
-            "formula_inline": 0,
-            "other": 0
-          }
-        },
-        "fonts": [
-          "Batang, Georgia, serif",
-          "Malgun Gothic, Segoe UI, sans-serif"
-        ],
-        "text_elements": 12,
-        "tspan_elements": 3,
-        "contextual_values": {
-          "colors": [
-            "#5A3D12",
-            "#8C6420",
-            "#9C7024",
-            "#B3202C",
-            "#B8862F",
-            "#D8C8AE",
-            "#D9B35E",
-            "#DCCFB9",
-            "#E8C873",
-            "#E9DFCF",
-            "#F2D88A",
-            "#FFF6D8",
-            "#FFFDF8"
-          ]
-        }
-      },
-      "passed": true,
-      "source_sha256": "5b3da101336947164580ca14406135ad266af20793dc2497d4090d815205b09b"
-    },
-    {
-      "file": "06_hospitality.svg",
-      "path": "/home/user/ppt-master/projects/russian_tea_ppt169_20261124/svg_output/06_hospitality.svg",
-      "exists": true,
-      "errors": [],
-      "warnings": [],
-      "info": {
-        "viewbox": "0 0 1280 720",
-        "carrier_receipt": {
-          "text_elements": 11,
-          "images": {
-            "placements": 0,
-            "files": [],
-            "max_frame_share": 0.0
-          },
-          "icons": 0,
-          "effects": {
-            "inline_emphasis_runs": 0,
-            "gradient_uses": 0,
-            "filter_uses": 0,
-            "text_effects": 0
-          },
-          "geometry": {
-            "svg_elements": {
-              "rect": 6,
-              "circle": 9,
-              "ellipse": 0,
-              "line": 3,
-              "polyline": 0,
-              "polygon": 0,
-              "path": 6
-            },
-            "preset_shapes": 2,
-            "preset_names": {
-              "rightArrow": 2
-            },
-            "page_frame_elements": 11,
-            "marker_uses": {
-              "start": 0,
-              "mid": 0,
-              "end": 0
-            }
-          },
-          "native_objects": {
-            "chart": 0,
-            "table": 0,
-            "formula_block": 0,
-            "formula_inline": 0,
-            "other": 0
-          }
-        },
-        "fonts": [
-          "Batang, Georgia, serif",
-          "Malgun Gothic, Segoe UI, sans-serif"
-        ],
-        "text_elements": 11,
-        "tspan_elements": 1,
-        "contextual_values": {
-          "colors": [
-            "#B3202C",
-            "#C98A3D",
-            "#D9A055",
-            "#E8C873"
-          ]
-        },
-        "sparse_typography_sizes": {
-          "72": 1
-        }
-      },
-      "passed": true,
-      "source_sha256": "6e3b267ed65c98a1e19a1de172100695dfddc157ab7a53990aaf16e897ac4f60"
-    },
-    {
-      "file": "07_ussr.svg",
-      "path": "/home/user/ppt-master/projects/russian_tea_ppt169_20261124/svg_output/07_ussr.svg",
-      "exists": true,
-      "errors": [],
-      "warnings": [],
-      "info": {
-        "viewbox": "0 0 1280 720",
-        "carrier_receipt": {
-          "text_elements": 8,
-          "images": {
-            "placements": 0,
-            "files": [],
-            "max_frame_share": 0.0
-          },
-          "icons": 0,
-          "effects": {
-            "inline_emphasis_runs": 1,
-            "gradient_uses": 0,
-            "filter_uses": 0,
-            "text_effects": 0
-          },
-          "geometry": {
-            "svg_elements": {
-              "rect": 2,
-              "circle": 4,
-              "ellipse": 6,
-              "line": 2,
-              "polyline": 0,
-              "polygon": 0,
-              "path": 0
-            },
-            "preset_shapes": 0,
-            "preset_names": {},
-            "page_frame_elements": 1,
-            "marker_uses": {
-              "start": 0,
-              "mid": 0,
-              "end": 0
-            }
-          },
-          "native_objects": {
-            "chart": 0,
-            "table": 0,
-            "formula_block": 0,
-            "formula_inline": 0,
-            "other": 0
-          }
-        },
-        "fonts": [
-          "Batang, Georgia, serif",
-          "Malgun Gothic, Segoe UI, sans-serif"
-        ],
-        "text_elements": 8,
-        "tspan_elements": 2
-      },
-      "passed": true,
-      "source_sha256": "edc7660000ab8ada876f4a77566f8e20ddd829450439d7f03a3f803bf7fb9406"
-    },
-    {
-      "file": "08_conclusion.svg",
-      "path": "/home/user/ppt-master/projects/russian_tea_ppt169_20261124/svg_output/08_conclusion.svg",
-      "exists": true,
-      "errors": [],
-      "warnings": [
-        "Noncanonical compact authoring: Authoring SVG contains noncanonical or redundant inherited style declarations (6 change(s)); examples (group:attr None -> value hoists the shared value onto that group; child:attr value -> None drops the copy the child now inherits): thanks:font-family None -> 'Batang, Georgia, serif'; thanks:text-anchor None -> 'middle'; text[60]:font-family 'Batang, Georgia, serif' -> None (advisory; normalize with `python3 scripts/compact_svg_styles.py <svg_output> --inplace`, re-stamp pages that carry Chart/Table fallbacks, and rerun the final gate, or leave the explicit form)"
-      ],
-      "info": {
-        "viewbox": "0 0 1280 720",
-        "carrier_receipt": {
-          "text_elements": 11,
-          "images": {
-            "placements": 0,
-            "files": [],
-            "max_frame_share": 0.0
-          },
-          "icons": 0,
-          "effects": {
-            "inline_emphasis_runs": 0,
-            "gradient_uses": 0,
-            "filter_uses": 0,
-            "text_effects": 0
-          },
-          "geometry": {
-            "svg_elements": {
-              "rect": 3,
-              "circle": 16,
-              "ellipse": 0,
-              "line": 2,
-              "polyline": 0,
-              "polygon": 0,
-              "path": 12
-            },
-            "preset_shapes": 1,
-            "preset_names": {
-              "ribbon2": 1
-            },
-            "page_frame_elements": 26,
-            "marker_uses": {
-              "start": 0,
-              "mid": 0,
-              "end": 0
-            }
-          },
-          "native_objects": {
-            "chart": 0,
-            "table": 0,
-            "formula_block": 0,
-            "formula_inline": 0,
-            "other": 0
-          }
-        },
-        "fonts": [
-          "Batang, Georgia, serif",
-          "Malgun Gothic, Segoe UI, sans-serif"
-        ],
-        "text_elements": 11,
-        "tspan_elements": 0,
-        "contextual_values": {
-          "colors": [
-            "#E8C873"
-          ]
-        }
-      },
-      "passed": true,
-      "source_sha256": "9ceca98da28bfc86a683ce32292f5dcdc3e1c789d728ef85590bede5682f9cb8"
+      "source_sha256": "820176e9f85cae1953e16272f7d53d4a91a188be623e3cc2a88904e33164666c"
     }
   ]
 }

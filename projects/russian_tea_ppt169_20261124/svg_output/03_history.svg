@@ -1,60 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Malgun Gothic, Segoe UI, sans-serif" data-pptx-page-role="content">
   <defs>
-    <marker id="spineEnd" orient="auto" markerWidth="6" markerHeight="6" refX="3" refY="3">
-      <polygon points="0,0 6,3 0,6" fill="#C79A3B"/>
-    </marker>
+    <clipPath id="histFrame"><rect x="700" y="230" width="480" height="360" rx="16"/></clipPath>
   </defs>
+  <image id="bg" data-pptx-role="background" href="../images/bg_content.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="xMidYMid slice"/>
 
-  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FBF6EC"/>
-  <rect id="top-band" data-pptx-role="decoration" x="0" y="0" width="1280" height="10" fill="#8E1B24"/>
-
-  <g id="corner-ornament" data-pptx-role="decoration" data-pptx-bounds="1060 18 210 170">
-    <path d="M1258 32 C1200 32 1150 52 1124 94 C1106 124 1110 154 1132 176" fill="none" stroke="#C79A3B" stroke-width="3" stroke-linecap="round"/>
-    <path d="M1180 40 C1170 62 1176 84 1196 96" fill="none" stroke="#C79A3B" stroke-width="2" stroke-linecap="round"/>
-    <g fill="#C79A3B">
-      <path transform="translate(1148 66) rotate(200)" d="M0 0 C8 -10 24 -10 32 0 C24 10 8 10 0 0 Z"/>
-      <path transform="translate(1112 128) rotate(250)" d="M0 0 C8 -10 24 -10 32 0 C24 10 8 10 0 0 Z"/>
-      <path transform="translate(1196 96) rotate(20)" d="M0 0 C8 -10 24 -10 32 0 C24 10 8 10 0 0 Z"/>
-      <path transform="translate(1226 34) rotate(150)" d="M0 0 C8 -10 24 -10 32 0 C24 10 8 10 0 0 Z"/>
-    </g>
-    <g fill="#B3202C">
-      <circle cx="1238" cy="68" r="10"/><circle cx="1220" cy="80" r="8"/><circle cx="1242" cy="90" r="7"/>
-    </g>
-    <circle cx="1234" cy="64" r="3" fill="#F3E7D3"/>
+  <g id="header" data-pptx-bounds="210 70 850 136">
+    <text x="214" y="170" font-family="Batang, Times New Roman, serif" font-size="104" font-weight="bold" fill="#C79A3B">01</text>
+    <text x="352" y="158" font-family="Batang, Georgia, serif" font-size="56" font-weight="bold" fill="#8E1B24">러시아 차 문화의 역사</text>
+    <line x1="354" y1="190" x2="454" y2="190" stroke="#C79A3B" stroke-width="2"/>
   </g>
 
-  <g id="header" data-pptx-bounds="64 60 980 156">
-    <text x="96" y="98" font-family="Batang, Georgia, serif" font-size="22" letter-spacing="4" fill="#C79A3B">ИСТОРИЯ</text>
-    <text x="96" y="166" font-family="Batang, Georgia, serif" font-size="56" font-weight="bold" fill="#8E1B24">러시아 차 문화의 역사</text>
-    <line x1="96" y1="198" x2="166" y2="198" stroke="#C79A3B" stroke-width="2"/>
-    <circle cx="180" cy="198" r="5" fill="#C79A3B"/>
+  <g id="timeline" data-pptx-bounds="210 240 470 424">
+    <line x1="232" y1="290" x2="232" y2="600" stroke="#C79A3B" stroke-width="2"/>
+    <circle cx="232" cy="290" r="10" fill="#FBF6EC" stroke="#C79A3B" stroke-width="3"/>
+    <circle cx="232" cy="440" r="14" fill="#8E1B24" stroke="#E8C873" stroke-width="3"/>
+    <circle cx="232" cy="590" r="10" fill="#FBF6EC" stroke="#C79A3B" stroke-width="3"/>
+    <text x="262" y="304" font-family="Batang, Georgia, serif" font-size="40" font-weight="bold" fill="#2B2220">중국 · 몽골</text>
+    <text x="258" y="476" font-family="Batang, Times New Roman, serif" font-size="104" font-weight="bold" fill="#8E1B24">1638</text>
+    <text x="262" y="526" font-size="32" fill="#2B2220">알틴 칸의 선물</text>
+    <text x="262" y="604" font-family="Batang, Times New Roman, serif" font-size="40" font-weight="bold" fill="#2B2220">18–19세기</text>
+    <text x="262" y="650" font-size="32" fill="#6E5E54">모두의 음료로</text>
   </g>
 
-  <g id="timeline" data-pptx-bounds="80 236 1120 334">
-    <line x1="100" y1="404" x2="1170" y2="404" stroke="#C79A3B" stroke-width="3" marker-end="url(#spineEnd)"/>
-    <g id="stage-origin">
-      <circle cx="200" cy="404" r="12" fill="#8E1B24" stroke="#E8C873" stroke-width="3"/>
-      <text x="200" y="352" font-family="Batang, Georgia, serif" font-size="40" font-weight="bold" fill="#8E1B24" text-anchor="middle">중국 · 몽골</text>
-      <text x="200" y="464" font-size="32" fill="#2B2220" text-anchor="middle">차가 전해진 길</text>
-    </g>
-    <g id="stage-1638">
-      <circle cx="540" cy="404" r="12" fill="#8E1B24" stroke="#E8C873" stroke-width="3"/>
-      <text x="540" y="356" font-family="Batang, Times New Roman, serif" font-size="104" font-weight="bold" fill="#8E1B24" text-anchor="middle">1638</text>
-      <text x="540" y="464" font-size="32" fill="#2B2220" text-anchor="middle">알틴 칸의 선물<tspan x="540" dy="46">처음엔 비싼 음료</tspan><tspan x="540" dy="46" fill="#6E5E54">부유한 사람들</tspan></text>
-    </g>
-    <g id="stage-18-19">
-      <circle cx="930" cy="404" r="12" fill="#8E1B24" stroke="#E8C873" stroke-width="3"/>
-      <text x="930" y="356" font-family="Batang, Times New Roman, serif" font-size="104" font-weight="bold" fill="#8E1B24" text-anchor="middle">18–19<tspan font-size="40">세기</tspan></text>
-      <text x="930" y="464" font-size="32" fill="#2B2220" text-anchor="middle">무역의 발전<tspan x="930" dy="46">일반 사람들에게</tspan></text>
-    </g>
+  <g id="history-picture" data-pptx-bounds="690 220 500 380">
+    <image href="../images/p03_caravan.png" x="700" y="230" width="480" height="360" preserveAspectRatio="xMidYMid slice" clip-path="url(#histFrame)"/>
+    <rect x="700" y="230" width="480" height="360" rx="16" fill="none" stroke="#C79A3B" stroke-width="2"/>
   </g>
-
-  <g id="takeaway" data-pptx-bounds="290 572 700 90">
-    <g id="p03-takeaway-plaque" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="plaque" data-pptx-frame="300 578 680 76" fill="#F3E7D3" stroke="#C79A3B" stroke-width="2">
-<path d="M 300 590.67 A 12.67 12.67 0 0 0 312.67 578 L 967.33 578 A 12.67 12.67 0 0 0 980 590.67 L 980 641.33 A 12.67 12.67 0 0 0 967.33 654 L 312.67 654 A 12.67 12.67 0 0 0 300 641.33 Z"/>
-</g>
-    <text x="640" y="627" font-size="32" fill="#2B2220" text-anchor="middle">특별한 음료 → <tspan fill="#8E1B24" font-weight="bold">일상적인 음료</tspan></text>
-  </g>
-
-  <text id="page-number" data-pptx-role="page-number" x="640" y="694" font-size="18" fill="#6E5E54" text-anchor="middle">03</text>
 </svg>

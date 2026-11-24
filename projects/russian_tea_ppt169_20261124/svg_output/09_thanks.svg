@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Malgun Gothic, Segoe UI, sans-serif" data-pptx-page-role="ending">
+  <image id="bg" data-pptx-role="background" href="../images/p09_thanks.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="xMidYMid slice"/>
+
+  <g id="thanks" data-pptx-bounds="330 230 620 260">
+    <text x="640" y="340" font-family="Batang, Times New Roman, serif" font-size="104" font-weight="bold" fill="#8E1B24" text-anchor="middle">감사합니다</text>
+    <line x1="560" y1="384" x2="626" y2="384" stroke="#C79A3B" stroke-width="2"/>
+    <circle cx="640" cy="384" r="5" fill="#C79A3B"/>
+    <line x1="654" y1="384" x2="720" y2="384" stroke="#C79A3B" stroke-width="2"/>
+    <text x="640" y="430" font-family="Batang, Georgia, serif" font-size="22" letter-spacing="4" fill="#C79A3B" text-anchor="middle">СПАСИБО ЗА ВНИМАНИЕ</text>
+    <text x="640" y="474" font-size="24" fill="#6E5E54" text-anchor="middle">추빌리나 알렉산드라</text>
+  </g>
+</svg>
