@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Malgun Gothic, Segoe UI, sans-serif" data-pptx-page-role="content">
+  <defs>
+    <linearGradient id="brass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8C6420"/>
+      <stop offset="0.25" stop-color="#E8C873"/>
+      <stop offset="0.5" stop-color="#B8862F"/>
+      <stop offset="0.75" stop-color="#F2D88A"/>
+      <stop offset="1" stop-color="#8C6420"/>
+    </linearGradient>
+    <linearGradient id="teaGlass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#B5521B"/>
+      <stop offset="1" stop-color="#6E2A0C"/>
+    </linearGradient>
+    <linearGradient id="honey" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B9771C"/>
+      <stop offset="0.45" stop-color="#F2B84B"/>
+      <stop offset="1" stop-color="#A8681A"/>
+    </linearGradient>
+    <radialGradient id="groundShadow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#6E5E54" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#6E5E54" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FBF6EC"/>
+  <rect id="top-band" data-pptx-role="decoration" x="0" y="0" width="1280" height="10" fill="#8E1B24"/>
+
+  <g id="header" data-pptx-bounds="64 60 1000 156">
+    <text x="96" y="98" font-family="Batang, Georgia, serif" font-size="22" letter-spacing="4" fill="#C79A3B">КАКОЙ ЧАЙ ПЬЮТ В РОССИИ</text>
+    <text x="96" y="166" font-family="Batang, Georgia, serif" font-size="56" font-weight="bold" fill="#8E1B24">러시아 사람들은 어떤 차를 마실까?</text>
+    <line x1="96" y1="198" x2="166" y2="198" stroke="#C79A3B" stroke-width="2"/>
+    <circle cx="180" cy="198" r="5" fill="#C79A3B"/>
+  </g>
+
+  <g id="tea-habits" data-pptx-bounds="96 232 680 352" data-pptx-replace-with="table" data-pptx-fallback-sha256="299d3d4aee6d50d666aef008b3df0a0eb1eb63428b52e4ad7aebb95db56dfcb7">
+    <metadata type="application/json">
+      {
+        "schema": "ppt-master.semantic-table.v2",
+        "name": "tea-habits",
+        "x": 96,
+        "y": 232,
+        "width": 680,
+        "height": 352,
+        "strict_grid": true,
+        "column_widths": [
+          270,
+          410
+        ],
+        "row_heights": [
+          64,
+          72,
+          72,
+          72,
+          72
+        ],
+        "style": {
+          "font_family": "Malgun Gothic",
+          "font_size": 30,
+          "header_font_size": 24,
+          "header_fill": "#8E1B24",
+          "header_text": "#FBF6EC",
+          "body_fill": "#FBF6EC",
+          "body_text": "#2B2220",
+          "band_row": true,
+          "band_fill": "#F3E7D3",
+          "border_color": "#E2D3B8",
+          "border_width": 1,
+          "padding": {
+            "left": 16,
+            "right": 16,
+            "top": 6,
+            "bottom": 6
+          },
+          "valign": "middle"
+        },
+        "columns": [
+          {
+            "text": "구분",
+            "bold": true,
+            "align": "l"
+          },
+          {
+            "text": "러시아에서는",
+            "bold": true,
+            "align": "l"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "text": "아침",
+              "bold": true,
+              "color": "#8E1B24",
+              "fill": "#FBF6EC"
+            },
+            {
+              "text": "커피",
+              "fill": "#FBF6EC"
+            }
+          ],
+          [
+            {
+              "text": "오후 · 식사 후",
+              "bold": true,
+              "color": "#8E1B24",
+              "fill": "#F3E7D3"
+            },
+            {
+              "text": "차",
+              "bold": true,
+              "color": "#8E1B24",
+              "fill": "#F3E7D3"
+            }
+          ],
+          [
+            {
+              "text": "가장 인기",
+              "bold": true,
+              "color": "#8E1B24",
+              "fill": "#FBF6EC"
+            },
+            {
+              "text": "홍차 (녹차 · 허브차도)",
+              "fill": "#FBF6EC"
+            }
+          ],
+          [
+            {
+              "text": "함께",
+              "bold": true,
+              "color": "#8E1B24",
+              "fill": "#F3E7D3"
+            },
+            {
+              "text": "설탕 · 레몬 · 꿀 · 잼",
+              "fill": "#F3E7D3"
+            }
+          ]
+        ]
+      }
+    </metadata>
+    <rect x="96" y="232" width="680" height="64" fill="#8E1B24"/>
+    <rect x="96" y="296" width="680" height="72" fill="#FBF6EC"/>
+    <rect x="96" y="368" width="680" height="72" fill="#F3E7D3"/>
+    <rect x="96" y="440" width="680" height="72" fill="#FBF6EC"/>
+    <rect x="96" y="512" width="680" height="72" fill="#F3E7D3"/>
+    <rect x="96" y="232" width="680" height="352" fill="none" stroke="#E2D3B8" stroke-width="1"/>
+    <g stroke="#E2D3B8" stroke-width="1">
+      <line x1="366" y1="232" x2="366" y2="584"/>
+      <line x1="96" y1="296" x2="776" y2="296"/>
+      <line x1="96" y1="368" x2="776" y2="368"/>
+      <line x1="96" y1="440" x2="776" y2="440"/>
+      <line x1="96" y1="512" x2="776" y2="512"/>
+    </g>
+    <g font-size="24" font-weight="bold" fill="#FBF6EC">
+      <text x="112" y="272">구분</text>
+      <text x="382" y="272">러시아에서는</text>
+    </g>
+    <g font-size="30" fill="#2B2220">
+      <text x="112" y="342" font-weight="bold" fill="#8E1B24">아침</text>
+      <text x="382" y="342">커피</text>
+      <text x="112" y="414" font-weight="bold" fill="#8E1B24">오후 · 식사 후</text>
+      <text x="382" y="414" font-weight="bold" fill="#8E1B24">차</text>
+      <text x="112" y="486" font-weight="bold" fill="#8E1B24">가장 인기</text>
+      <text x="382" y="486">홍차 (녹차 · 허브차도)</text>
+      <text x="112" y="558" font-weight="bold" fill="#8E1B24">함께</text>
+      <text x="382" y="558">설탕 · 레몬 · 꿀 · 잼</text>
+    </g>
+  </g>
+
+  <g id="tea-still-life" data-pptx-bounds="820 218 400 218">
+    <ellipse cx="1010" cy="420" rx="200" ry="14" fill="url(#groundShadow)"/>
+    <g id="tea-glass">
+      <path d="M858 250 L938 250 L930 380 L866 380 Z" fill="#FFFFFF" fill-opacity="0.6" stroke="#D8C8AE" stroke-width="1.5"/>
+      <path d="M861 270 L935 270 L929 376 L867 376 Z" fill="url(#teaGlass)"/>
+      <circle cx="914" cy="262" r="20" fill="#F4D35E" stroke="#E0B53A" stroke-width="2"/>
+      <g stroke="#E0B53A" stroke-width="1.5">
+        <line x1="914" y1="244" x2="914" y2="280"/>
+        <line x1="896" y1="262" x2="932" y2="262"/>
+      </g>
+      <path d="M862 318 L934 318 L928 410 L868 410 Z" fill="url(#brass)"/>
+      <path d="M864 340 C890 350 906 350 932 340" fill="none" stroke="#8C6420" stroke-width="3"/>
+      <path d="M934 326 C972 326 972 392 930 392" fill="none" stroke="#9C7024" stroke-width="7"/>
+      <rect x="860" y="406" width="76" height="8" rx="3" fill="#8C6420"/>
+    </g>
+    <g id="jam-jar">
+      <rect x="990" y="300" width="92" height="110" rx="14" fill="#8E1B24"/>
+      <path d="M1002 318 C998 350 1000 380 1008 398" fill="none" stroke="#FFFFFF" stroke-opacity="0.45" stroke-width="5" stroke-linecap="round"/>
+      <rect x="982" y="276" width="108" height="30" rx="8" fill="#FBF6EC" stroke="#C79A3B" stroke-width="2"/>
+      <g fill="#B3202C"><circle cx="1000" cy="291" r="4"/><circle cx="1018" cy="291" r="4"/><circle cx="1036" cy="291" r="4"/><circle cx="1054" cy="291" r="4"/><circle cx="1072" cy="291" r="4"/></g>
+      <line x1="984" y1="306" x2="1088" y2="306" stroke="#C79A3B" stroke-width="3"/>
+      <circle cx="1036" cy="356" r="16" fill="#E8C873"/>
+      <circle cx="1036" cy="356" r="7" fill="#B3202C"/>
+    </g>
+    <g id="honey-pot">
+      <ellipse cx="1160" cy="362" rx="48" ry="50" fill="url(#honey)"/>
+      <rect x="1128" y="304" width="64" height="16" rx="6" fill="#9C6A1C"/>
+      <path d="M1124 330 C1140 340 1180 340 1196 330 L1194 344 C1176 352 1144 352 1126 344 Z" fill="#F7D27A"/>
+      <line x1="1190" y1="244" x2="1170" y2="318" stroke="#8C6420" stroke-width="6" stroke-linecap="round"/>
+      <ellipse cx="1192" cy="240" rx="9" ry="12" fill="#C98A3D"/>
+    </g>
+  </g>
+
+  <g id="cold-remedy" data-pptx-bounds="820 452 400 192">
+    <rect x="820" y="456" width="396" height="184" rx="16" fill="#F3E7D3"/>
+    <rect x="820" y="456" width="10" height="184" fill="#8E1B24"/>
+    <text x="852" y="508" font-size="32" font-weight="bold" fill="#8E1B24">감기에 걸렸을 때</text>
+    <text x="852" y="560" font-size="32" fill="#2B2220">라즈베리 잼 · 꿀 · 레몬<tspan x="852" dy="46">+ 따뜻한 차</tspan></text>
+  </g>
+
+  <text id="page-number" data-pptx-role="page-number" x="640" y="694" font-size="18" fill="#6E5E54" text-anchor="middle">04</text>
+</svg>

@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Malgun Gothic, Segoe UI, sans-serif" data-pptx-page-role="cover">
+  <defs>
+    <linearGradient id="brass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8C6420"/>
+      <stop offset="0.25" stop-color="#E8C873"/>
+      <stop offset="0.5" stop-color="#B8862F"/>
+      <stop offset="0.75" stop-color="#F2D88A"/>
+      <stop offset="1" stop-color="#8C6420"/>
+    </linearGradient>
+    <linearGradient id="porcelain" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E9DFCF"/>
+      <stop offset="0.45" stop-color="#FFFDF8"/>
+      <stop offset="1" stop-color="#DCCFB9"/>
+    </linearGradient>
+    <radialGradient id="groundShadow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#6E5E54" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#6E5E54" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FBF6EC"/>
+
+  <g id="band-left" data-pptx-role="decoration" data-pptx-bounds="0 0 60 720">
+    <rect x="0" y="0" width="60" height="720" fill="#8E1B24"/>
+    <path d="M30 20 C48 60 12 100 30 140 C48 180 12 220 30 260 C48 300 12 340 30 380 C48 420 12 460 30 500 C48 540 12 580 30 620 C48 660 12 690 30 710" fill="none" stroke="#C79A3B" stroke-width="2.5" stroke-linecap="round"/>
+    <g fill="#E8C873">
+      <circle cx="30" cy="80" r="7"/><circle cx="30" cy="200" r="7"/><circle cx="30" cy="320" r="7"/><circle cx="30" cy="440" r="7"/><circle cx="30" cy="560" r="7"/><circle cx="30" cy="680" r="7"/>
+    </g>
+    <g fill="#C79A3B">
+      <path transform="translate(36 140) rotate(-35)" d="M0 0 C6 -7 16 -7 22 0 C16 7 6 7 0 0 Z"/>
+      <path transform="translate(24 260) rotate(215)" d="M0 0 C6 -7 16 -7 22 0 C16 7 6 7 0 0 Z"/>
+      <path transform="translate(36 380) rotate(-35)" d="M0 0 C6 -7 16 -7 22 0 C16 7 6 7 0 0 Z"/>
+      <path transform="translate(24 500) rotate(215)" d="M0 0 C6 -7 16 -7 22 0 C16 7 6 7 0 0 Z"/>
+      <path transform="translate(36 620) rotate(-35)" d="M0 0 C6 -7 16 -7 22 0 C16 7 6 7 0 0 Z"/>
+    </g>
+  </g>
+
+  <g id="band-right" data-pptx-role="decoration" data-pptx-bounds="1220 0 60 720">
+    <rect x="1220" y="0" width="60" height="720" fill="#8E1B24"/>
+    <path d="M1250 20 C1268 60 1232 100 1250 140 C1268 180 1232 220 1250 260 C1268 300 1232 340 1250 380 C1268 420 1232 460 1250 500 C1268 540 1232 580 1250 620 C1268 660 1232 690 1250 710" fill="none" stroke="#C79A3B" stroke-width="2.5" stroke-linecap="round"/>
+    <g fill="#E8C873">
+      <circle cx="1250" cy="80" r="7"/><circle cx="1250" cy="200" r="7"/><circle cx="1250" cy="320" r="7"/><circle cx="1250" cy="440" r="7"/><circle cx="1250" cy="560" r="7"/><circle cx="1250" cy="680" r="7"/>
+    </g>
+    <g fill="#C79A3B">
+      <path transform="translate(1256 140) rotate(-35)" d="M0 0 C6 -7 16 -7 22 0 C16 7 6 7 0 0 Z"/>
+      <path transform="translate(1244 260) rotate(215)" d="M0 0 C6 -7 16 -7 22 0 C16 7 6 7 0 0 Z"/>
+      <path transform="translate(1256 380) rotate(-35)" d="M0 0 C6 -7 16 -7 22 0 C16 7 6 7 0 0 Z"/>
+      <path transform="translate(1244 500) rotate(215)" d="M0 0 C6 -7 16 -7 22 0 C16 7 6 7 0 0 Z"/>
+      <path transform="translate(1256 620) rotate(-35)" d="M0 0 C6 -7 16 -7 22 0 C16 7 6 7 0 0 Z"/>
+    </g>
+  </g>
+
+  <g id="cover-title" data-pptx-bounds="110 150 560 480">
+    <text x="120" y="192" font-family="Batang, Georgia, serif" font-size="22" letter-spacing="5" fill="#C79A3B">ЧАЙНАЯ КУЛЬТУРА РОССИИ</text>
+    <text x="114" y="318" font-family="Batang, Times New Roman, serif" font-size="104" font-weight="bold" fill="#8E1B24">러시아의<tspan x="114" dy="122">차 문화</tspan></text>
+    <g>
+      <line x1="120" y1="488" x2="210" y2="488" stroke="#C79A3B" stroke-width="2"/>
+      <circle cx="226" cy="488" r="7" fill="#C79A3B"/>
+      <line x1="242" y1="488" x2="332" y2="488" stroke="#C79A3B" stroke-width="2"/>
+    </g>
+    <text x="120" y="552" font-size="32" fill="#2B2220">차는 단순한 음료가 아닙니다</text>
+    <text x="120" y="612" font-size="24" fill="#6E5E54">추빌리나 알렉산드라</text>
+  </g>
+
+  <g id="samovar" data-pptx-bounds="690 110 500 560">
+    <g transform="translate(760 150)">
+      <ellipse cx="180" cy="458" rx="200" ry="16" fill="url(#groundShadow)"/>
+      <ellipse cx="180" cy="442" rx="150" ry="18" fill="#9C7024"/>
+      <ellipse cx="180" cy="437" rx="145" ry="14" fill="url(#brass)"/>
+      <path d="M118 432 L242 432 L224 398 L136 398 Z" fill="url(#brass)"/>
+      <rect x="128" y="390" width="104" height="10" rx="4" fill="#8C6420"/>
+      <rect x="150" y="354" width="60" height="38" fill="url(#brass)"/>
+      <ellipse cx="180" cy="354" rx="42" ry="8" fill="#B8862F"/>
+      <path d="M96 170 C60 168 56 216 94 216" fill="none" stroke="#5A3D12" stroke-width="10" stroke-linecap="round"/>
+      <path d="M264 170 C300 168 304 216 266 216" fill="none" stroke="#5A3D12" stroke-width="10" stroke-linecap="round"/>
+      <path d="M96 140 C82 220 88 300 126 352 L234 352 C272 300 278 220 264 140 C240 124 120 124 96 140 Z" fill="url(#brass)"/>
+      <path d="M92 172 C150 190 210 190 268 172" fill="none" stroke="#8C6420" stroke-width="4"/>
+      <path d="M102 318 C150 334 210 334 258 318" fill="none" stroke="#8C6420" stroke-width="4"/>
+      <path d="M118 166 C106 224 110 290 136 334" fill="none" stroke="#FFF6D8" stroke-opacity="0.55" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="180" cy="250" r="46" fill="#8E1B24" stroke="#E8C873" stroke-width="4"/>
+      <g fill="#E8C873">
+        <ellipse cx="180" cy="228" rx="8" ry="14"/>
+        <ellipse cx="180" cy="228" rx="8" ry="14" transform="rotate(60 180 250)"/>
+        <ellipse cx="180" cy="228" rx="8" ry="14" transform="rotate(120 180 250)"/>
+        <ellipse cx="180" cy="228" rx="8" ry="14" transform="rotate(180 180 250)"/>
+        <ellipse cx="180" cy="228" rx="8" ry="14" transform="rotate(240 180 250)"/>
+        <ellipse cx="180" cy="228" rx="8" ry="14" transform="rotate(300 180 250)"/>
+      </g>
+      <circle cx="180" cy="250" r="8" fill="#FBF6EC"/>
+      <path d="M226 318 L294 318 L294 333 L282 333 L282 352 L271 352 L271 333 L226 333 Z" fill="url(#brass)"/>
+      <ellipse cx="288" cy="312" rx="11" ry="5" fill="#5A3D12"/>
+      <ellipse cx="180" cy="140" rx="86" ry="14" fill="#D9B35E"/>
+      <path d="M140 140 L220 140 L208 106 L152 106 Z" fill="url(#brass)"/>
+      <ellipse cx="180" cy="106" rx="30" ry="6" fill="#E8C873"/>
+      <path d="M132 58 C106 58 104 94 134 96" fill="none" stroke="#C79A3B" stroke-width="6" stroke-linecap="round"/>
+      <path d="M226 70 C248 66 256 50 266 38 L272 43 C264 58 254 82 228 88 Z" fill="#FFFDF8" stroke="#D8C8AE" stroke-width="1.5"/>
+      <ellipse cx="180" cy="74" rx="52" ry="36" fill="url(#porcelain)" stroke="#D8C8AE" stroke-width="1.5"/>
+      <circle cx="180" cy="76" r="13" fill="#8E1B24"/>
+      <circle cx="180" cy="76" r="5" fill="#E8C873"/>
+      <path transform="translate(196 70) rotate(-20)" d="M0 0 C6 -7 16 -7 22 0 C16 7 6 7 0 0 Z" fill="#C79A3B"/>
+      <path transform="translate(164 70) rotate(200)" d="M0 0 C6 -7 16 -7 22 0 C16 7 6 7 0 0 Z" fill="#C79A3B"/>
+      <ellipse cx="180" cy="40" rx="27" ry="7" fill="#F3E7D3" stroke="#C79A3B" stroke-width="2"/>
+      <circle cx="180" cy="31" r="6" fill="#8E1B24"/>
+    </g>
+    <g transform="translate(700 560)">
+      <ellipse cx="70" cy="62" rx="70" ry="12" fill="#FFFDF8" stroke="#D8C8AE" stroke-width="1.5"/>
+      <ellipse cx="70" cy="62" rx="56" ry="7" fill="none" stroke="#8E1B24" stroke-width="2"/>
+      <path d="M118 18 C142 16 142 44 112 42" fill="none" stroke="#C79A3B" stroke-width="5"/>
+      <path d="M22 10 L118 10 C116 42 98 56 70 56 C42 56 24 42 22 10 Z" fill="url(#porcelain)" stroke="#D8C8AE" stroke-width="1.5"/>
+      <ellipse cx="70" cy="12" rx="47" ry="6" fill="#7A2E0E"/>
+      <path d="M27 26 C55 33 85 33 113 26" fill="none" stroke="#8E1B24" stroke-width="4"/>
+    </g>
+    <g fill="none" stroke-width="12">
+      <circle cx="1080" cy="604" r="26" stroke="#C98A3D"/>
+      <circle cx="1124" cy="590" r="26" stroke="#D9A055"/>
+      <circle cx="1100" cy="566" r="26" stroke="#B87A30"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Malgun Gothic, Segoe UI, sans-serif" data-pptx-page-role="ending">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FBF6EC"/>
+
+  <g id="band-left" data-pptx-role="decoration" data-pptx-bounds="0 0 60 720">
+    <rect x="0" y="0" width="60" height="720" fill="#8E1B24"/>
+    <path d="M30 20 C48 60 12 100 30 140 C48 180 12 220 30 260 C48 300 12 340 30 380 C48 420 12 460 30 500 C48 540 12 580 30 620 C48 660 12 690 30 710" fill="none" stroke="#C79A3B" stroke-width="2.5" stroke-linecap="round"/>
+    <g fill="#E8C873">
+      <circle cx="30" cy="80" r="7"/><circle cx="30" cy="200" r="7"/><circle cx="30" cy="320" r="7"/><circle cx="30" cy="440" r="7"/><circle cx="30" cy="560" r="7"/><circle cx="30" cy="680" r="7"/>
+    </g>
+    <g fill="#C79A3B">
+      <path transform="translate(36 140) rotate(-35)" d="M0 0 C6 -7 16 -7 22 0 C16 7 6 7 0 0 Z"/>
+      <path transform="translate(24 260) rotate(215)" d="M0 0 C6 -7 16 -7 22 0 C16 7 6 7 0 0 Z"/>
+      <path transform="translate(36 380) rotate(-35)" d="M0 0 C6 -7 16 -7 22 0 C16 7 6 7 0 0 Z"/>
+      <path transform="translate(24 500) rotate(215)" d="M0 0 C6 -7 16 -7 22 0 C16 7 6 7 0 0 Z"/>
+      <path transform="translate(36 620) rotate(-35)" d="M0 0 C6 -7 16 -7 22 0 C16 7 6 7 0 0 Z"/>
+    </g>
+  </g>
+
+  <g id="band-right" data-pptx-role="decoration" data-pptx-bounds="1220 0 60 720">
+    <rect x="1220" y="0" width="60" height="720" fill="#8E1B24"/>
+    <path d="M1250 20 C1268 60 1232 100 1250 140 C1268 180 1232 220 1250 260 C1268 300 1232 340 1250 380 C1268 420 1232 460 1250 500 C1268 540 1232 580 1250 620 C1268 660 1232 690 1250 710" fill="none" stroke="#C79A3B" stroke-width="2.5" stroke-linecap="round"/>
+    <g fill="#E8C873">
+      <circle cx="1250" cy="80" r="7"/><circle cx="1250" cy="200" r="7"/><circle cx="1250" cy="320" r="7"/><circle cx="1250" cy="440" r="7"/><circle cx="1250" cy="560" r="7"/><circle cx="1250" cy="680" r="7"/>
+    </g>
+    <g fill="#C79A3B">
+      <path transform="translate(1256 140) rotate(-35)" d="M0 0 C6 -7 16 -7 22 0 C16 7 6 7 0 0 Z"/>
+      <path transform="translate(1244 260) rotate(215)" d="M0 0 C6 -7 16 -7 22 0 C16 7 6 7 0 0 Z"/>
+      <path transform="translate(1256 380) rotate(-35)" d="M0 0 C6 -7 16 -7 22 0 C16 7 6 7 0 0 Z"/>
+      <path transform="translate(1244 500) rotate(215)" d="M0 0 C6 -7 16 -7 22 0 C16 7 6 7 0 0 Z"/>
+      <path transform="translate(1256 620) rotate(-35)" d="M0 0 C6 -7 16 -7 22 0 C16 7 6 7 0 0 Z"/>
+    </g>
+  </g>
+
+  <g id="header" data-pptx-bounds="300 60 680 156">
+    <text x="640" y="98" font-family="Batang, Georgia, serif" font-size="22" letter-spacing="4" fill="#C79A3B" text-anchor="middle">ЗАКЛЮЧЕНИЕ</text>
+    <text x="640" y="166" font-family="Batang, Georgia, serif" font-size="56" font-weight="bold" fill="#8E1B24" text-anchor="middle">마무리</text>
+    <line x1="570" y1="198" x2="626" y2="198" stroke="#C79A3B" stroke-width="2"/>
+    <circle cx="640" cy="198" r="5" fill="#C79A3B"/>
+    <line x1="654" y1="198" x2="710" y2="198" stroke="#C79A3B" stroke-width="2"/>
+  </g>
+
+  <g id="point-history" data-pptx-bounds="200 236 280 200">
+    <circle cx="340" cy="302" r="58" fill="#8E1B24" stroke="#E8C873" stroke-width="4"/>
+    <text x="340" y="316" font-family="Batang, Georgia, serif" font-size="40" font-weight="bold" fill="#FBF6EC" text-anchor="middle">역사</text>
+    <text x="340" y="412" font-size="32" fill="#2B2220" text-anchor="middle">오랜 시간에 걸쳐</text>
+  </g>
+  <g id="point-daily" data-pptx-bounds="500 236 280 200">
+    <circle cx="640" cy="302" r="58" fill="#8E1B24" stroke="#E8C873" stroke-width="4"/>
+    <text x="640" y="316" font-family="Batang, Georgia, serif" font-size="40" font-weight="bold" fill="#FBF6EC" text-anchor="middle">일상</text>
+    <text x="640" y="412" font-size="32" fill="#2B2220" text-anchor="middle">매일의 음료</text>
+  </g>
+  <g id="point-together" data-pptx-bounds="800 236 280 200">
+    <circle cx="940" cy="302" r="58" fill="#8E1B24" stroke="#E8C873" stroke-width="4"/>
+    <text x="940" y="316" font-family="Batang, Georgia, serif" font-size="40" font-weight="bold" fill="#FBF6EC" text-anchor="middle">소통</text>
+    <text x="940" y="412" font-size="32" fill="#2B2220" text-anchor="middle">함께 보내는 시간</text>
+  </g>
+
+  <g id="takeaway" data-pptx-bounds="136 452 1008 120">
+    <g id="p08-takeaway-ribbon" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="ribbon2" data-pptx-frame="140 456 1000 110" data-pptx-av-adj2="val 75000" fill="#8E1B24" stroke="#C79A3B" stroke-width="2">
+<path d="M 140 566 L 358.75 566 A 31.25 4.58 0 0 0 358.75 556.83 L 296.25 556.83 A 31.25 4.58 0 0 1 296.25 547.67 L 983.75 547.67 A 31.25 4.58 0 0 1 983.75 556.83 L 921.25 556.83 A 31.25 4.58 0 0 0 921.25 566 L 1140 566 L 1015 520.17 L 1140 474.33 L 1015 474.33 L 1015 460.58 A 31.25 4.58 0 0 0 983.75 456 L 296.25 456 A 31.25 4.58 0 0 0 265 460.58 L 265 474.33 L 140 474.33 L 265 520.17 Z" stroke="none"/>
+<path d="M 390 561.42 A 31.25 4.58 0 0 0 358.75 556.83 L 296.25 556.83 A 31.25 4.58 0 0 1 296.25 547.67 L 390 547.67 Z M 890 561.42 A 31.25 4.58 0 0 1 921.25 556.83 L 983.75 556.83 A 31.25 4.58 0 0 0 983.75 547.67 L 890 547.67 Z" fill="#74161E" stroke="none"/>
+<path d="M 140 566 L 265 520.17 L 140 474.33 L 265 474.33 L 265 460.58 A 31.25 4.58 0 0 1 296.25 456 L 983.75 456 A 31.25 4.58 0 0 1 1015 460.58 L 1015 474.33 L 1015 474.33 L 1140 474.33 L 1015 520.17 L 1140 566 L 921.25 566 A 31.25 4.58 0 0 1 921.25 556.83 L 983.75 556.83 A 31.25 4.58 0 0 0 983.75 547.67 L 296.25 547.67 A 31.25 4.58 0 0 0 296.25 556.83 L 358.75 556.83 A 31.25 4.58 0 0 1 358.75 566 Z M 390 547.67 L 390 561.42 M 890 561.42 L 890 547.67 M 265 552.25 L 265 474.33 M 1015 474.33 L 1015 552.25" fill="none"/>
+</g>
+    <text x="640" y="515" font-family="Batang, Georgia, serif" font-size="40" font-weight="bold" fill="#FBF6EC" text-anchor="middle">차 한잔 = 만나서 가까워지는 기회</text>
+  </g>
+
+  <g id="thanks" data-pptx-bounds="340 590 600 110">
+    <text x="640" y="646" font-family="Batang, Georgia, serif" font-size="56" font-weight="bold" fill="#8E1B24" text-anchor="middle">감사합니다</text>
+    <text x="640" y="686" font-family="Batang, Georgia, serif" font-size="22" letter-spacing="4" fill="#C79A3B" text-anchor="middle">СПАСИБО ЗА ВНИМАНИЕ</text>
+  </g>
+</svg>

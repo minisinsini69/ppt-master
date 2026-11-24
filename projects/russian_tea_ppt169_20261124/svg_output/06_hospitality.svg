@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Malgun Gothic, Segoe UI, sans-serif" data-pptx-page-role="content">
+  <rect id="bg" x="0" y="0" width="1280" height="720" fill="#FBF6EC"/>
+  <rect id="top-band" data-pptx-role="decoration" x="0" y="0" width="1280" height="10" fill="#8E1B24"/>
+
+  <g id="corner-ornament" data-pptx-role="decoration" data-pptx-bounds="1060 18 210 170">
+    <path d="M1258 32 C1200 32 1150 52 1124 94 C1106 124 1110 154 1132 176" fill="none" stroke="#C79A3B" stroke-width="3" stroke-linecap="round"/>
+    <path d="M1180 40 C1170 62 1176 84 1196 96" fill="none" stroke="#C79A3B" stroke-width="2" stroke-linecap="round"/>
+    <g fill="#C79A3B">
+      <path transform="translate(1148 66) rotate(200)" d="M0 0 C8 -10 24 -10 32 0 C24 10 8 10 0 0 Z"/>
+      <path transform="translate(1112 128) rotate(250)" d="M0 0 C8 -10 24 -10 32 0 C24 10 8 10 0 0 Z"/>
+      <path transform="translate(1196 96) rotate(20)" d="M0 0 C8 -10 24 -10 32 0 C24 10 8 10 0 0 Z"/>
+      <path transform="translate(1226 34) rotate(150)" d="M0 0 C8 -10 24 -10 32 0 C24 10 8 10 0 0 Z"/>
+    </g>
+    <g fill="#B3202C">
+      <circle cx="1238" cy="68" r="10"/><circle cx="1220" cy="80" r="8"/><circle cx="1242" cy="90" r="7"/>
+    </g>
+    <circle cx="1234" cy="64" r="3" fill="#F3E7D3"/>
+  </g>
+
+  <g id="header" data-pptx-bounds="64 60 980 156">
+    <text x="96" y="98" font-family="Batang, Georgia, serif" font-size="22" letter-spacing="4" fill="#C79A3B">ГОСТЕПРИИМСТВО</text>
+    <text x="96" y="166" font-family="Batang, Georgia, serif" font-size="56" font-weight="bold" fill="#8E1B24">차를 통한 소통과 환대</text>
+    <line x1="96" y1="198" x2="166" y2="198" stroke="#C79A3B" stroke-width="2"/>
+    <circle cx="180" cy="198" r="5" fill="#C79A3B"/>
+  </g>
+
+  <g id="step-guest" data-pptx-bounds="96 232 240 172">
+    <rect x="96" y="236" width="240" height="164" rx="16" fill="#F3E7D3"/>
+    <text x="216" y="306" font-size="32" font-weight="bold" fill="#8E1B24" text-anchor="middle">손님이 오면</text>
+    <text x="216" y="352" font-family="Batang, Georgia, serif" font-size="22" letter-spacing="3" fill="#C79A3B" text-anchor="middle">ГОСТИ</text>
+  </g>
+
+  <g id="p06-arrow-1" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="rightArrow" data-pptx-frame="352 294 56 48" fill="#C79A3B" stroke="none">
+<path d="M 352 306 L 384 306 L 384 294 L 408 318 L 384 342 L 384 330 L 352 330 Z"/>
+</g>
+
+  <g id="step-treats" data-pptx-bounds="424 232 424 172">
+    <rect x="424" y="236" width="424" height="164" rx="16" fill="#F3E7D3"/>
+    <text x="636" y="300" font-size="32" font-weight="bold" fill="#8E1B24" text-anchor="middle">차와 간식</text>
+    <text x="636" y="350" font-size="32" fill="#2B2220" text-anchor="middle">과자 · 빵 · 잼 · 바란키</text>
+  </g>
+
+  <g id="p06-arrow-2" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="rightArrow" data-pptx-frame="864 294 56 48" fill="#C79A3B" stroke="none">
+<path d="M 864 306 L 896 306 L 896 294 L 920 318 L 896 342 L 896 330 L 864 330 Z"/>
+</g>
+
+  <g id="step-welcome" data-pptx-bounds="936 232 252 172">
+    <rect x="936" y="236" width="248" height="164" rx="16" fill="#F3E7D3"/>
+    <text x="1060" y="290" font-size="32" font-weight="bold" fill="#8E1B24" text-anchor="middle">반갑게 환영</text>
+    <text x="1060" y="336" font-size="24" fill="#2B2220" text-anchor="middle">서두르지 않고<tspan x="1060" dy="34">오래 이야기</tspan></text>
+  </g>
+
+  <g id="quote" data-pptx-bounds="0 440 1280 214">
+    <rect x="0" y="446" width="1280" height="204" fill="#8E1B24"/>
+    <line x1="0" y1="458" x2="1280" y2="458" stroke="#C79A3B" stroke-width="1.5"/>
+    <line x1="0" y1="638" x2="1280" y2="638" stroke="#C79A3B" stroke-width="1.5"/>
+    <g fill="none" stroke-width="12">
+      <circle cx="118" cy="536" r="30" stroke="#D9A055"/>
+      <circle cx="164" cy="566" r="30" stroke="#C98A3D"/>
+      <circle cx="1116" cy="566" r="30" stroke="#C98A3D"/>
+      <circle cx="1162" cy="536" r="30" stroke="#D9A055"/>
+    </g>
+    <text x="640" y="544" font-family="Batang, Georgia, serif" font-size="72" font-style="italic" fill="#FBF6EC" text-anchor="middle">«Давай попьём чаю»</text>
+    <text x="640" y="604" font-size="32" fill="#E8C873" text-anchor="middle">“차 한잔하자” = 만나서 이야기하자</text>
+  </g>
+
+  <text id="page-number" data-pptx-role="page-number" x="640" y="694" font-size="18" fill="#6E5E54" text-anchor="middle">06</text>
+</svg>
